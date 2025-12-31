@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Rouh Almokawala",
+    "subTitle": "On-site Intervention & Maintenance",
+    "desc": " We respond fast to keep your operations running—diagnosis, repair, and preventive maintenance with certified technicians and strict safety standards.",
+    "img": "/home1/assets/img/head_slide1.jpg"
+  },
+  {
+    "title": "Trusted Service",
+    "subTitle": "Reliable Field Support",
+    "desc": " Professional intervention services for homes and businesses—high-quality workmanship, clear reporting, and on-time delivery.",
+    "img": "/home1/assets/img/head_slide2.jpg"
+  },
+  {
+    "title": "Safe & Compliant",
+    "subTitle": "Certified Technicians",
+    "desc": " From inspections to repairs, we work to industry standards with proper PPE, documentation, and compliance to site requirements.",
+    "img": "/home1/assets/img/head_slide3.jpg"
+  }
+]

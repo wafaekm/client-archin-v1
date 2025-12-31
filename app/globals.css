@@ -1,0 +1,40 @@
+/* EN (défaut) : cible très spécifique */
+body.home-style1 h1.js-title {
+    font-size: 72px !important;
+    line-height: 1.05 !important;
+  }
+  
+  /* AR (RTL) : plus petit */
+  html[dir="rtl"] body.home-style1 h1.js-title {
+    font-size: 56px !important; /* essaie 52 ou 48 si besoin */
+    line-height: 1.10 !important;
+  }
+  
+  /* Taille du bouton */
+.butn.hover-orange {
+    padding: 20px 21px !important;   /* taille du bouton */
+    font-size: 14px !important;      /* taille du texte */
+    line-height: 1.2 !important;
+  }
+  .butn.hover-orange i {
+    font-size: 12px !important;      /* taille de l’icône */
+  }
+  
+/* Hover orange sur ce bouton uniquement */
+.butn.hover-orange {
+    background: transparent !important;
+    border-color: currentColor; /* garde le style existant */
+  }
+  
+  .butn.hover-orange:hover {
+    background: #ff7a00 !important;
+    border-color: #ff7a00 !important;
+    color: #fff !important;
+  }
+  
+  .butn.hover-orange:hover span,
+  .butn.hover-orange:hover i {
+    color: #fff !important;
+  }
+  
+  
