@@ -57,7 +57,7 @@ function Projects() {
               className="butn borderd border rounded-pill hover-bg-black"
             >
               <span>
-                See All Projects
+                View All Projects
                 <i className="ms-2 fal fa-long-arrow-right ico-45"></i>
               </span>
             </a>

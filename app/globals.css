@@ -37,4 +37,156 @@ body.home-style1 h1.js-title {
     color: #fff !important;
   }
   
+  /* Force toutes les images Team à la même hauteur */
+.tc-team-style1 .team-card .img {
+  height: 320px;        /* ajuste selon ton design */
+  overflow: hidden;
+  border-radius: 15px;  /* si ton template utilise des arrondis */
+}
+
+.tc-team-style1 .team-card .img img,
+.tc-team-style1 .team-card .img .img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.tc-footer-style1 .footer-map iframe {
+    display: block;
+  }
   
+
+/* Base: on sort le control du flux et on le place plus bas */
+.tc-testimonials-style1 .clients-slider1{
+    position: relative;
+    padding-bottom: 90px; /* réserve de l’espace pour les controls */
+  }
+  
+  .tc-testimonials-style1 .clients-slider1 .slider-controls{
+    position: absolute;
+    bottom: 10px; /* descend le control */
+    z-index: 3;
+  }
+  
+  /* LTR (EN): controls à droite */
+  .tc-testimonials-style1[dir="ltr"] .clients-slider1 .slider-controls{
+    right: 0;
+    left: auto;
+  }
+  
+  /* RTL (AR): controls à gauche */
+  .tc-testimonials-style1[dir="rtl"] .clients-slider1 .slider-controls{
+    left: 0;
+    right: auto;
+  }
+  
+  /* Par défaut ton template fait "cover" (crop/zoom) */
+.tc-team-style1 .team-card .img .img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Pour la fille : moins zoomé */
+  .tc-team-style1 .team-card .img .img-contain{
+    object-fit: contain;     /* ne crop pas */
+    transform: scale(1.1);  /* ajuste si tu veux encore moins "grand" */
+  }
+  
+  /* ✅ Footer AR: fond orange clair (uniquement) */
+.tc-footer-style1.rtl-footer-fix{
+  background: #FFF1E6; /* orange très clair */
+}
+
+/* Optionnel: éviter que le fond soit “coupé” par des fonds internes */
+.tc-footer-style1.rtl-footer-fix .top-content,
+.tc-footer-style1.rtl-footer-fix .foot{
+  background: transparent;
+}
+
+/* Optionnel: si certains textes deviennent trop clairs, force la lisibilité */
+.tc-footer-style1.rtl-footer-fix .color-666{
+  color: rgba(0,0,0,0.62) !important;
+}
+.tc-footer-style1.rtl-footer-fix .color-333{
+  color: rgba(0,0,0,0.82) !important;
+}
+
+/* Optionnel: ligne de séparation du bas un peu plus douce sur fond orange */
+.tc-footer-style1.rtl-footer-fix.border-top{
+  border-top-color: rgba(0,0,0,0.10) !important;
+}
+/* Keep Bootstrap grid behaving like EN */
+.rtl-footer-fix { direction: ltr; }
+
+/* Arabic content */
+.rtl-footer-fix .ar-block {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Keep email/tel in correct order */
+.rtl-footer-fix .ltr-inline {
+  direction: ltr;
+  unicode-bidi: plaintext;
+  display: inline-block;
+}
+
+/* Same map frame as EN */
+.rtl-footer-fix .footer-map{
+  position: relative;
+  width: 100%;
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #f7f7f7;
+}
+.rtl-footer-fix .footer-map iframe{
+  width: 100%;
+  height: 260px;
+  display: block;
+  border: 0;
+}
+
+/* ✅ Footer EN: fond orange clair (uniquement) */
+.tc-footer-style1.en-footer-fix{
+  background: #FFF1E6; /* orange clair */
+}
+
+/* Garder le fond transparent à l'intérieur pour éviter des blocs blancs */
+.tc-footer-style1.en-footer-fix .top-content,
+.tc-footer-style1.en-footer-fix .foot{
+  background: transparent;
+}
+
+/* Map frame (même principe que rtl-footer-fix) */
+.en-footer-fix .footer-map{
+  position: relative;
+  width: 100%;
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #f7f7f7;
+}
+
+.en-footer-fix .footer-map iframe{
+  width: 100%;
+  height: 260px;
+  display: block;
+  border: 0;
+}
+.en-footer-fix .footer-right-col{
+  padding-left: 190px; /* augmente si besoin */
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Plus d'espace entre l'accordéon et l'image */
+@media (min-width: 992px) {
+  .tc-process-style1 .process-media-col {
+    padding-left: 50px; /* augmente à 70px si tu veux */
+  }
+}

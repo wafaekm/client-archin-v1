@@ -1,24 +1,12 @@
-'use client';
 import React from 'react';
+import Link from "next/link";
 
 function Navbar() {
-  function openSideMenu() {
-    const sideMenu = document.querySelector('.side_menu4_overlay');
-    const sideMenu2 = document.querySelector('.side_menu4_overlay2');
-    const sideMenu4 = document.querySelector('.side_menu_style4');
-    sideMenu2.classList.add('show');
-    sideMenu.classList.add('show');
-    sideMenu4.classList.add('show');
-  }
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark inner-navbar-style1">
-      <div className="container-fluid">
-        <a className="navbar-brand me-lg-5" href="#">
-          <img
-            src="/innerpages/assets/img/logo_wh.png"
-            alt=""
-            className="logo"
-          />
+    <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x">
+      <div className="container-fluid content">
+        <a className="navbar-brand" href="#">
+          <img src="/home1/assets/img/logo.png" alt="" className="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -40,17 +28,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Studio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Cases
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                News
+                Projects
               </a>
             </li>
             <li className="nav-item">
@@ -60,31 +38,22 @@ function Navbar() {
             </li>
           </ul>
           <div className="nav-side">
-            <a href="#" className="icon ms-3">
+            <Link href="/" className="icon ms-3">
               <span> EN </span>
-            </a>
-            <a href="#" className="icon ms-3">
-              <span> FR </span>
-            </a>
-            <a href="#" className="icon ms-5 fsz-21 search_btn">
+            </Link>
+
+            <Link href="/home1-rtl" className="icon ms-3">
+              <span> AR </span>
+            </Link>
+
+            <a href="#" className="icon ms-5 fsz-21">
               <span>
-                <i className="la la-search"></i>
+                <i className="la la-search"></i>{" "}
               </span>
             </a>
-            <div className="nav-search-box">
-              <div className="form-group">
-                <input type="text" placeholder="search word" />
-                <button>
-                  <i className="fal fa-search"></i>
-                </button>
-              </div>
-            </div>
-            <a
-              href="#"
-              className="icon ms-3 side_menu_btn fsz-21 active d-none d-lg-inline-block"
-            >
-              <span onClick={openSideMenu}>
-                <i className="la la-grip-lines"></i>
+            <a href="#" className="icon ms-3 side_menu_btn fsz-21">
+              <span>
+                <i className="la la-grip-lines"></i>{" "}
               </span>
             </a>
           </div>

@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
 function Services() {
   return (
-    <section className="tc-services-style1">
+    <section className="tc-services-style1" dir="rtl">
       <div className="content section-padding section-padding-x">
         <div className="container">
           <div className="title mb-80 text-center">
-            <p className="color-666 text-uppercase wow"> احصل على عرض أسعار الآن </p>
+            <p className="color-666 text-uppercase wow">خدمات المقاولات لدينا</p>
           </div>
+
           <div className="services">
             <div className="row">
               <div className="col-lg-3">
@@ -19,7 +20,9 @@ function Services() {
                   <div className="icon">
                     <i className="la la-hard-hat"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> الهندسة المعمارية والبناء </h5>
+
+                  <h5 className="fsz-24 mb-20">الإنشاءات المدنية</h5>
+
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser1.jpg"
@@ -27,15 +30,17 @@ function Services() {
                       className="img-cover"
                     />
                   </div>
+
                   <div className="text color-666 mt-50">
-                    التخطيط، التصور ثلاثي الأبعاد، تصميم المناظر الطبيعية، الرسم
-                    الهيكلي، الصور الحاسوبية، الإشراف على البناء
+                    تنفيذ أعمال سكنية وتجارية وصناعية وفق معايير صارمة للجودة والسلامة.
                   </div>
+
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
                   </span>
                 </a>
               </div>
+
               <div className="col-lg-3">
                 <a
                   href="#"
@@ -45,7 +50,9 @@ function Services() {
                   <div className="icon">
                     <i className="la la-bezier-curve"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> التصميم الداخلي والخارجي </h5>
+
+                  <h5 className="fsz-24 mb-20">الأعمال الكهروميكانيكية (MEP)</h5>
+
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser2.jpg"
@@ -53,15 +60,17 @@ function Services() {
                       className="img-cover"
                     />
                   </div>
+
                   <div className="text color-666 mt-50">
-                    التصميم الداخلي، التصميم الخارجي، التجديد، التصميم المستدام،
-                    التركيب، نظام السباكة، تجربة ثلاثية الأبعاد
+                    كهرباء وسباكة وتكييف وأنظمة مكافحة الحريق — تنفيذ آمن ومتوافق مع المتطلبات.
                   </div>
+
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
                   </span>
                 </a>
               </div>
+
               <div className="col-lg-3">
                 <a
                   href="#"
@@ -71,7 +80,9 @@ function Services() {
                   <div className="icon">
                     <i className="la la-bed"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> إنتاج الأثاث </h5>
+
+                  <h5 className="fsz-24 mb-20">التشطيبات وأعمال الفِت-أوت</h5>
+
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser3.jpg"
@@ -79,15 +90,17 @@ function Services() {
                       className="img-cover"
                     />
                   </div>
+
                   <div className="text color-666 mt-50">
-                    الأثاث حسب الطلب، توريد المواد، المتجر الإلكتروني، التوزيع،
-                    النمذجة ثلاثية الأبعاد
+                    تشطيبات داخلية وخارجية متكاملة بجودة عالية والتزام بالتسليم في الوقت المحدد.
                   </div>
+
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
                   </span>
                 </a>
               </div>
+
               <div className="col-lg-3">
                 <a
                   href="#"
@@ -97,7 +110,9 @@ function Services() {
                   <div className="icon">
                     <i className="la la-comments"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> استشارات ومشرف المشروع </h5>
+
+                  <h5 className="fsz-24 mb-20">البنية التحتية وأعمال الحفر</h5>
+
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser4.jpg"
@@ -105,9 +120,11 @@ function Services() {
                       className="img-cover"
                     />
                   </div>
+
                   <div className="text color-666 mt-50">
-                    تحليل المشروع، توثيق العطاءات، مشرف البناء
+                    طرق وتصريف وشبكات مياه وتطوير المواقع — تنفيذ يركّز على المتانة والاستدامة.
                   </div>
+
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
                   </span>
@@ -115,21 +132,23 @@ function Services() {
               </div>
             </div>
           </div>
+
           <div className="text-center">
             <a
               href="#"
               className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
             >
               <span>
-                احصل على عرض أسعار الآن
+                احصل على عرض سعر مجاني الآن
                 <i className="small ms-1 ti-arrow-top-right"></i>
               </span>
             </a>
           </div>
         </div>
       </div>
+
       <div className="ser-img">
-        <img src="/home1/assets/img/services/ser.jpg" alt="" />
+        <img src="/home1/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

@@ -2944,3 +2944,184 @@
     margin-bottom: 30px;
   }
 }
+/* Fix: keep text above the decorative line image */
+.tc-project-style1 .services {
+  position: relative;
+}
+
+.tc-project-style1 .services .line {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tc-project-style1 .services .container,
+.tc-project-style1 .services .items {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   PROJECT HERO AS BACKGROUND
+   ========================= */
+
+/* Le hero devient un "container" positionné */
+.s-project-pg-style1 .tc-project-style1.header {
+  position: relative;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+/* L'image passe en background (plein écran derrière le contenu) */
+.s-project-pg-style1 .tc-project-style1.header .main-img {
+  position: absolute;
+  inset: 0;              /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 0;      /* important si tu ne veux pas l'arrondi en haut */
+}
+
+/* Image cover */
+.s-project-pg-style1 .tc-project-style1.header .main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  max-height: none;
+  object-position: center; /* ou "top" si tu préfères */
+}
+
+/* Un overlay pour la lisibilité du texte (optionnel mais recommandé) */
+.s-project-pg-style1 .tc-project-style1.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0)
+  );
+}
+
+/* Le texte du hero au-dessus de l'image */
+.s-project-pg-style1 .tc-project-style1.header .main-info {
+  position: relative;
+  z-index: 2;
+  padding: 180px 0 120px;  /* ajuste selon ton rendu */
+  color: #fff;
+}
+
+/* Boutons/tags visibles sur image */
+.s-project-pg-style1 .tc-project-style1.header .tags a {
+  color: #fff;
+  border-color: rgba(255,255,255,0.55);
+}
+
+/* Sous-titre lisible */
+.s-project-pg-style1 .tc-project-style1.header .main-info .text {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* Le bloc description reste "en dessous" */
+.s-project-pg-style1 .tc-project-style1 .description {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  border-radius: 30px 30px 0 0;
+  margin-top: -30px;
+}
+/* Navbar en overlay sur le hero */
+.s-project-pg-style1 .inner-navbar-style1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Couleur des liens sur image */
+.s-project-pg-style1 .inner-navbar-style1 .navbar-nav .nav-link,
+.s-project-pg-style1 .inner-navbar-style1 .nav-side a {
+  color: #fff;
+}
+/* Navbar plus haute (remonte) */
+.s-project-pg-style1 .inner-navbar-style1 {
+  padding-top: 0px;   
+  padding-bottom: 60px;
+}
+
+/* Si tu veux aussi la coller davantage en haut */
+.s-project-pg-style1 .inner-navbar-style1 {
+  top: 0;             
+}
+/* Titre hero un peu plus petit */
+.s-project-pg-style1 .tc-project-style1.header .main-info .title {
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: -0.04em; /* légèrement moins agressif */
+}
+
+/* Related Projects: garder le curseur normal */
+.tc-related-projects-style1 .tab-content *,
+.tc-related-projects-style1 .cases-slider * {
+  cursor: auto !important;
+}
+.s-project-pg-style1 .tc-chat-style1 .xl-text {
+  font-size: 64px;   /* ajuste: 48–72 */
+  line-height: 1.05;
+}
+@media (max-width: 991px) {
+  .s-project-pg-style1 .tc-chat-style1 .xl-text {
+    font-size: 32px;
+    line-height: 1.15;
+    word-break: break-word; /* évite le débordement */
+  }
+}
+/* Canvas: navbar en blanc sur hero dark */
+body.navbar-white-on-hero .inner-navbar-style1 .navbar-nav .nav-link,
+body.navbar-white-on-hero .inner-navbar-style1 .nav-side a {
+  color: #fff !important;
+}
+
+/* Optionnel: icônes/menu */
+body.navbar-white-on-hero .inner-navbar-style1 .nav-side i,
+body.navbar-white-on-hero .inner-navbar-style1 .navbar-toggler {
+  color: #fff !important;
+}
+
+/* Optionnel: améliorer lisibilité sur image dark (léger fond blur) */
+body.navbar-white-on-hero .inner-navbar-style1 {
+  position: absolute;            /* si ton template est comme ça */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+
+body.navbar-white-on-hero .inner-navbar-style1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0));
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.navbar-white-on-hero .inner-navbar-style1 > * {
+  position: relative;
+  z-index: 1;
+}
+/* Empêche les pseudo-elements de bloquer le clic */
+.tc-projects-style1 .project-card .img::after {
+  pointer-events: none;
+}
+
+/* Assure que le contenu passe au-dessus */
+.tc-projects-style1 .project-card .info {
+  position: relative;
+  z-index: 2;
+}

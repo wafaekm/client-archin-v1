@@ -134,7 +134,7 @@ function Services() {
         </div>
       </div>
       <div className="ser-img">
-        <img src="/innerpages/assets/img/services/ser.jpg" alt="" />
+        <img src="/innerpages/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

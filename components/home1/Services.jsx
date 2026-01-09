@@ -6,7 +6,7 @@ function Services() {
       <div className="content section-padding section-padding-x">
         <div className="container">
           <div className="title mb-80 text-center">
-            <p className="color-666 text-uppercase wow"> our services </p>
+            <p className="color-666 text-uppercase wow"> Our Contracting Services </p>
           </div>
           <div className="services">
             <div className="row">
@@ -19,7 +19,7 @@ function Services() {
                   <div className="icon">
                     <i className="la la-hard-hat"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> Architecture & Building </h5>
+                  <h5 className="fsz-24 mb-20"> Civil Construction </h5>
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser1.jpg"
@@ -28,8 +28,7 @@ function Services() {
                     />
                   </div>
                   <div className="text color-666 mt-50">
-                    Planning, 3D Vissuallization, Landscape Design, Structural
-                    Drawing, CGI, Construction Supervision
+                   Residential, commercial & industrial construction with strict quality and safety standards
                   </div>
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
@@ -45,7 +44,7 @@ function Services() {
                   <div className="icon">
                     <i className="la la-bezier-curve"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20">Interior and Exterior Design</h5>
+                  <h5 className="fsz-24 mb-20">Electro-Mechanical Works (MEP)</h5>
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser2.jpg"
@@ -54,8 +53,7 @@ function Services() {
                     />
                   </div>
                   <div className="text color-666 mt-50">
-                    Interior Design, Exterior Design, Rennovation, Sustainable
-                    Design, Installation, Plumbing System, 3D Experience
+                  Electrical, plumbing, HVAC and fire protection systems—safe and compliant delivery.
                   </div>
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
@@ -71,7 +69,7 @@ function Services() {
                   <div className="icon">
                     <i className="la la-bed"></i>
                   </div>
-                  <h5 className="fsz-24 mb-20"> Furniture Productions </h5>
+                  <h5 className="fsz-24 mb-20"> Finishing & Fit-Out </h5>
                   <div className="img">
                     <img
                       src="/home1/assets/img/services/ser3.jpg"
@@ -80,8 +78,7 @@ function Services() {
                     />
                   </div>
                   <div className="text color-666 mt-50">
-                    Bespoke Furniture, Material Supply, Online Store,
-                    Distribute, 3D Modeling
+                    Full finishing works for interiors and exteriors with premium workmanship and on-time delivery.
                   </div>
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
@@ -98,7 +95,7 @@ function Services() {
                     <i className="la la-comments"></i>
                   </div>
                   <h5 className="fsz-24 mb-20">
-                    Project Consulting & Supervisor
+                  Infrastructure & Excavation
                   </h5>
                   <div className="img">
                     <img
@@ -108,7 +105,7 @@ function Services() {
                     />
                   </div>
                   <div className="text color-666 mt-50">
-                    Project Analysis, Bid Documentation, Construction Supervisor
+                  Roads, drainage, water networks and site development—built for durability and sustainability.
                   </div>
                   <span className="arrow">
                     <i className="ti-arrow-top-right"></i>
@@ -131,7 +128,7 @@ function Services() {
         </div>
       </div>
       <div className="ser-img">
-        <img src="/home1/assets/img/services/ser.jpg" alt="" />
+        <img src="/home1/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

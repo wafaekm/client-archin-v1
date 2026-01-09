@@ -2191,3 +2191,22 @@ input:focus {
 .hover-bg-black:hover * {
   color: #fff;
 }
+
+/* Navbar visible sur fond blanc */
+.navbar-light-mode .nav-link,
+.navbar-light-mode .icon span,
+.navbar-light-mode .icon i {
+  color: #111 !important;
+}
+
+.navbar-light-mode .nav-link.active {
+  color: var(--color-orange1, #ff5a00) !important;
+}
+
+/* icone burger */
+.navbar-light-mode .navbar-toggler {
+  border-color: rgba(0,0,0,0.2) !important;
+}
+.navbar-light-mode .navbar-toggler-icon {
+  filter: invert(1) grayscale(1);
+}

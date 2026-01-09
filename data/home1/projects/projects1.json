@@ -1,30 +1,237 @@
 [
-  {
-    "title": "Townhouse in San Joe",
-    "sub1": "Architecture",
-    "sub2": "Furniture",
-    "desc": "This area will is short description of project, you can select to show or hide it,  this a sample short paragraph for this.",
-    "img": "/home1/assets/img/projects/proj1.jpg"
-  },
-  {
-    "title": "Homestay Rennovation and Interior Design",
-    "sub1": "Furniture",
-    "sub2": "Furniture",
-    "desc": "This area will is short description of project, you can select to show or hide it,  this a sample short paragraph for this.",
-    "img": "/home1/assets/img/projects/proj2.jpg"
-  },
-  {
-    "title": "Homestay Rennovation and Interior Design",
-    "sub1": "Furniture",
-    "sub2": "Furniture",
-    "desc": "This area will is short description of project, you can select to show or hide it,  this a sample short paragraph for this.",
-    "img": "/home1/assets/img/projects/proj3.jpg"
-  },
-  {
-    "title": "Townhouse in San Joe",
-    "sub1": "Furniture",
-    "sub2": "Architecture",
-    "desc": "This area will is short description of project, you can select to show or hide it,  this a sample short paragraph for this.",
-    "img": "/home1/assets/img/projects/proj1.jpg"
-  }
+{
+  "slug": "apex-industrial-services",
+  "title_en": "Apex Industrial Services",
+  "title_ar": "Apex Industrial Services",
+  "subTitle_en": "Turnkey office Fit-out & Engineering Solutions",
+  "subTitle_ar": "حلول هندسية وتشطيبات داخلية بنظام تسليم مفتاح",
+  "overview_en": "The Apex Industrial Services project represents a fully integrated turnkey solution located in the city of Dammam, Saudi Arabia, delivered from concept to completion. The project involved the complete transformation of an existing site through demolition, advanced engineering systems, high-quality finishing works, and bespoke interior design with full furniture fit-out.\n\nOur team managed and executed every phase of the project, ensuring seamless coordination between mechanical, electrical, HVAC, fire systems, and interior works to deliver a functional, modern, and fully operational workspace.",
+  "overview_ar": "يمثل مشروع Apex Industrial Services نموذجاً متكاملاً لمشاريع التسليم المفتاح، ويقع المشروع في مدينة الدمام بالمملكة العربية السعودية، حيث تم تنفيذ المشروع بالكامل بدءاً من أعمال الهدم وحتى تسليم موقع جاهز للتشغيل.\n\nشملت الأعمال تطوير الموقع القائم من خلال أنظمة هندسية متقدمة، تشطيبات عالية الجودة، وتنفيذ تصميم داخلي متكامل مع توريد وتركيب الأثاث، بما يضمن توفير بيئة عمل عصرية وعملية بأعلى المعايير.",
+  "location_en": "Dammam, Saudi Arabia",
+  "location_ar": "الدمام، المملكة العربية السعودية",
+  "status_en": "Completed",
+  "status_ar": "مكتمل",
+  "services_en": "Design & Build / Turnkey, Interior Fit-out, MEP, HVAC, Fire Systems",
+  "services_ar": "تصميم وتنفيذ / تسليم مفتاح، تشطيبات داخلية، أعمال كهروميكانيكية، تكييف وتهوية، أنظمة مكافحة الحريق",
+  "scope_en": [
+    "Concept development and full interior design coordination",
+    "Complete demolition of the existing site and removal of all outdated installations",
+    "Execution of full mechanical works in accordance with approved designs",
+    "Electrical systems including power distribution, lighting, and low-current systems",
+    "Supply and installation of HVAC systems for optimal performance and comfort",
+    "Installation of fire fighting and fire alarm systems",
+    "High-end finishing works including walls, ceilings, flooring, and paint",
+    "Furniture supply, installation, and complete interior fit-out",
+    "Final coordination, testing, and handover of the fully operational facility"
+  ],
+  "scope_ar": [
+    "إعداد وتطوير التصاميم المفاهيمية والتصميم الداخلي الكامل",
+    "أعمال الهدم الشاملة للموقع القائم وإزالة جميع التجهيزات القديمة",
+    "تنفيذ جميع الأعمال الميكانيكية وفق التصاميم المعتمدة",
+    "الأعمال الكهربائية بما يشمل القوى، الإنارة، وأنظمة التيار الخفيف",
+    "توريد وتركيب أنظمة التكييف والتهوية (HVAC)",
+    "تنفيذ أنظمة مكافحة الحريق وأنظمة الإنذار",
+    "أعمال تشطيبات داخلية عالية الجودة (جدران، أسقف، أرضيات، دهانات)",
+    "توريد وتركيب الأثاث وأعمال التجهيز الداخلي بالكامل",
+    "أعمال الاختبار والتنسيق والتسليم النهائي للموقع"
+  ],
+  "deliverables_en": [
+    "Fully operational and compliant office space",
+    "Integrated MEP and fire systems",
+    "Premium interior finishes",
+    "Custom-designed workspace tailored to client needs",
+    "Turnkey project delivery with a single point of responsibility"
+  ],
+  "deliverables_ar": [
+    "تسليم موقع جاهز للتشغيل بالكامل",
+    "أنظمة هندسية متكاملة ومتوافقة مع المتطلبات",
+    "تشطيبات داخلية راقية",
+    "مساحات عمل مصممة خصيصاً لتلبية احتياجات العميل",
+    "تنفيذ المشروع بنظام تسليم مفتاح مع مسؤولية كاملة من جهة واحدة"
+  ],
+  "img": "/home1/assets/img/projects/proj1.jpg",
+  "gallery": [
+    "/innerpages/assets/img/s_project/s_img1.png",
+    "/innerpages/assets/img/s_project/s_img2.png",
+    "/innerpages/assets/img/s_project/d1.jpg",
+    "/innerpages/assets/img/s_project/d2.png",
+    "/innerpages/assets/img/s_project/s1.png",
+    "/innerpages/assets/img/s_project/s2.png"
+  ]
+},
+
+{
+  "slug": "popeyes-restaurant-chain",
+  "title_en": "Popeyes Restaurant Chain",
+  "title_ar": "سلسلة مطاعم بوبايز",
+  "subTitle_en": "Multi-Branch Restaurant Fit-Out & Finishing Works",
+  "subTitle_ar": "تنفيذ أعمال التجهيز الداخلي والتشطيبات لعدة فروع",
+  "overview_en": "The Popeyes project involved the execution of comprehensive interior fit-out and finishing works for multiple restaurant branches located across Riyadh, the Eastern Province of Saudi Arabia, and the Kingdom of Bahrain.\n\nThe project was delivered in full compliance with Popeyes brand standards, restaurant operational requirements, and local health and safety regulations, ensuring fully operational and ready-to-open restaurant environments.",
+  "overview_ar": "تضمن مشروع بوبايز تنفيذ أعمال التجهيز الداخلي والتشطيبات بشكل متكامل لعدة فروع مطاعم موزعة في الرياض والمنطقة الشرقية بالمملكة العربية السعودية، بالإضافة إلى مملكة البحرين.\n\nتم تنفيذ المشروع وفقاً لمعايير وهوية بوبايز ومتطلبات التشغيل للمطاعم، وبما يتوافق مع اشتراطات الصحة والسلامة المحلية، لضمان تسليم فروع جاهزة للافتتاح والتشغيل.",
+  "location_en": "Riyadh & Eastern Province, Saudi Arabia — Bahrain",
+  "location_ar": "الرياض والمنطقة الشرقية، المملكة العربية السعودية — مملكة البحرين",
+  "status_en": "Completed",
+  "status_ar": "مكتمل",
+  "services_en": "Design & Build / Turnkey, Interior Fit-out, Finishing Works, MEP, HVAC, Fire Systems, Plumbing",
+  "services_ar": "تصميم وتنفيذ / تسليم مفتاح، تجهيز داخلي، تشطيبات، أعمال كهروميكانيكية، تكييف وتهوية، أنظمة مكافحة الحريق، أعمال صحية",
+  "scope_en": [
+    "Interior design coordination and execution in line with Popeyes brand guidelines",
+    "Demolition and site preparation works as required",
+    "Complete interior finishing works including walls, ceilings, flooring, and paint",
+    "Electrical works including power, lighting, and low-current systems",
+    "HVAC systems supply and installation suitable for restaurant operations",
+    "Fire fighting and fire alarm systems installation",
+    "Mechanical and plumbing works serving kitchen and service areas",
+    "Compliance with health and safety regulations and food hygiene requirements",
+    "Ventilation and exhaust systems standards compliance",
+    "Coordination with authorities and operational requirements",
+    "Final testing, inspection, and handover of all branches"
+  ],
+  "scope_ar": [
+    "تنسيق وتنفيذ التصميم الداخلي وفق معايير وهوية بوبايز",
+    "أعمال الهدم وتجهيز الموقع حسب الحاجة",
+    "تنفيذ التشطيبات الداخلية كاملة (جدران، أسقف، أرضيات، دهانات)",
+    "الأعمال الكهربائية بما يشمل القوى والإنارة وأنظمة التيار الخفيف",
+    "توريد وتركيب أنظمة التكييف والتهوية المناسبة لتشغيل المطاعم",
+    "تنفيذ أنظمة مكافحة الحريق وأنظمة الإنذار",
+    "أعمال ميكانيكية وصحية لخدمة مناطق المطبخ والخدمة",
+    "الالتزام باشتراطات الصحة والسلامة ومتطلبات سلامة الغذاء والنظافة",
+    "الالتزام بمعايير التهوية وأنظمة الشفط والعوادم",
+    "التنسيق مع الجهات المعنية ومتطلبات التشغيل",
+    "أعمال الاختبار والفحص والتسليم النهائي لكافة الفروع"
+  ],
+  "deliverables_en": [
+    "Fully operational restaurant branches across multiple locations",
+    "High-quality finishes aligned with Popeyes brand identity",
+    "Compliance with all restaurant standards and regulations",
+    "Consistent execution across all branches",
+    "Turnkey project delivery with a single point of responsibility"
+  ],
+  "deliverables_ar": [
+    "تسليم فروع مطاعم جاهزة للتشغيل عبر عدة مواقع",
+    "تشطيبات عالية الجودة متوافقة مع هوية بوبايز",
+    "الالتزام بكافة اشتراطات ومعايير المطاعم واللوائح التنظيمية",
+    "توحيد جودة التنفيذ عبر جميع الفروع",
+    "تسليم المشروع بنظام تسليم مفتاح مع مسؤولية كاملة من جهة واحدة"
+  ],
+  "img": "/innerpages/assets/img/s_project/popeyes_1.png",
+  "gallery": [
+    "/innerpages/assets/img/s_project/popeyes_1.png",
+    "/innerpages/assets/img/s_project/popeyes_2.png"
+  ]
+},
+
+{
+  "slug": "hulail-restaurant-chain",
+  "title_en": "Hulail Restaurant Chain",
+  "title_ar": "سلسلة مطاعم هليل",
+  "subTitle_en": "Multi-Branch Restaurant Fit-Out & Finishing Works",
+  "subTitle_ar": "تشطيبات وتجهيز فروع متعددة لمطاعم",
+  "overview_en": "The Hulail project involved the execution of comprehensive interior fit-out and finishing works for multiple restaurant branches located across Riyadh, Al-Ahsa, Al-Khobar, and Bahrain.\n\nThe project focused on delivering high-quality, fully operational restaurant spaces while maintaining brand consistency across all locations. All works were executed in compliance with restaurant operational standards, health and safety regulations, and local authority requirements.",
+  "overview_ar": "شمل مشروع هليل تنفيذ أعمال تشطيبات وتجهيزات داخلية متكاملة لعدة فروع مطاعم موزعة في الرياض، الأحساء، الخبر، ومملكة البحرين.\n\nركز المشروع على تسليم مساحات تشغيلية عالية الجودة مع الحفاظ على اتساق الهوية عبر جميع المواقع، وبما يتوافق مع معايير تشغيل المطاعم ومتطلبات الصحة والسلامة واشتراطات الجهات المحلية.",
+  "location_en": "Riyadh, Al-Ahsa, Al-Khobar (Saudi Arabia) & Bahrain",
+  "location_ar": "الرياض، الأحساء، الخبر (السعودية) ومملكة البحرين",
+  "status_en": "Completed",
+  "status_ar": "مكتمل",
+  "services_en": "Design & Build / Turnkey, Interior Fit-out, MEP, HVAC, Fire Systems, Plumbing",
+  "services_ar": "تصميم وتنفيذ / تسليم مفتاح، تشطيبات وتجهيز داخلي، أعمال كهروميكانيكية، تكييف وتهوية، أنظمة مكافحة الحريق، أعمال السباكة",
+  "scope_en": [
+    "Interior design coordination and execution in line with the Hulail brand concept",
+    "Demolition and preparation of existing spaces where required",
+    "Complete interior finishing works including walls, ceilings, flooring, and paint",
+    "Electrical works including power distribution, lighting, and low-current systems",
+    "HVAC systems supply and installation suitable for restaurant operations",
+    "Fire fighting and fire alarm systems in compliance with restaurant safety codes",
+    "Mechanical and plumbing works serving kitchen and service areas",
+    "Compliance with health and safety regulations and local authority requirements",
+    "Ventilation and exhaust systems standards for kitchen operations",
+    "Final inspection, testing, and handover of all branches"
+  ],
+  "scope_ar": [
+    "تنسيق وتنفيذ التصميم الداخلي بما يتوافق مع هوية مطاعم هليل",
+    "أعمال الهدم وتجهيز الموقع عند الحاجة",
+    "تشطيبات داخلية كاملة تشمل الجدران والأسقف والأرضيات والدهانات",
+    "الأعمال الكهربائية بما يشمل القوى والإنارة وأنظمة التيار الخفيف",
+    "توريد وتركيب أنظمة التكييف والتهوية المناسبة لتشغيل المطاعم",
+    "تنفيذ أنظمة مكافحة الحريق وأنظمة الإنذار وفق اشتراطات السلامة",
+    "الأعمال الميكانيكية والسباكة لخدمة مناطق المطبخ والخدمات",
+    "الالتزام باشتراطات الصحة والسلامة ومتطلبات الجهات المختصة",
+    "معايير التهوية وسحب الدخان وأنظمة العوادم للمطابخ",
+    "الفحص والاختبار والتسليم النهائي لجميع الفروع"
+  ],
+  "deliverables_en": [
+    "Fully operational restaurant branches across multiple locations",
+    "High-quality finishes aligned with brand identity",
+    "Compliance with all restaurant standards and regulations",
+    "Efficient multi-branch execution and timely delivery",
+    "Turnkey project delivery with a single point of responsibility"
+  ],
+  "deliverables_ar": [
+    "تسليم فروع مطاعم جاهزة للتشغيل في عدة مواقع",
+    "تشطيبات عالية الجودة متوافقة مع الهوية البصرية للعلامة",
+    "الالتزام بكافة معايير ومتطلبات تشغيل المطاعم والاشتراطات النظامية",
+    "تنفيذ متعدد الفروع بكفاءة وتسليم ضمن الجداول الزمنية",
+    "تسليم مفتاح بمسؤولية موحدة من جهة واحدة"
+  ],
+  "img": "/innerpages/assets/img/s_project/huleil0.jpg",
+  "gallery": [
+    "/innerpages/assets/img/s_project/huleil1.jpg",
+    "/innerpages/assets/img/s_project/huleil2.png"
+  ]
+},
+
+{
+  "slug": "canvas",
+  "title_en": "Canvas Restaurant",
+  "title_ar": "مطعم كانفاس",
+  "subTitle_en": "Restaurant Fit-Out & Finishing Works",
+  "subTitle_ar": "أعمال تجهيز داخلي وتشطيبات للمطاعم",
+  "overview_en": "Located on Prince Muhammad Ibn Saad Ibn Abdulaziz Road in Riyadh, Canvas is an international cuisine restaurant delivered as a completed fit-out project. The interior features a distinctive two-floor dining experience combining open, social seating with more reserved zones. Key design elements include artificial flames behind glass wall panels, softly lit paper-mâché ceiling lights, and illuminated marble-like seating that creates a modern, immersive atmosphere.\n\nThe fit-out was executed to achieve a refined, consistent guest experience and a fully operational restaurant environment ready for opening.",
+  "overview_ar": "يقع مطعم Canvas على طريق الأمير محمد بن سعد بن عبدالعزيز بمدينة الرياض، وهو مطعم للمأكولات العالمية تم تسليمه كمشروع تجهيز داخلي (Fit-Out) مكتمل. يتميز التصميم الداخلي بتجربة جلوس على طابقين تجمع بين الطابع العام المفتوح ومناطق أكثر خصوصية. ومن أبرز العناصر الجمالية: لهب صناعي خلف ألواح زجاجية على الجدران، وإضاءة سقفية ناعمة بعناصر ورقية (Paper-mâché)، ومقاعد مضيئة بتشطيب يشبه الرخام تمنح المكان طابعاً عصرياً وتجربة مميزة.\n\nتم تنفيذ أعمال التجهيز والتشطيبات لضمان تجربة ضيافة راقية ومتناسقة وتسليم مطعم جاهز للتشغيل والافتتاح.",
+  "location_en": "Riyadh, Saudi Arabia",
+  "location_ar": "الرياض، المملكة العربية السعودية",
+  "status_en": "Completed",
+  "status_ar": "مكتمل",
+  "services_en": "Interior Fit-out, Finishing Works, MEP Coordination",
+  "services_ar": "تجهيز داخلي، تشطيبات، تنسيق الأعمال الكهروميكانيكية",
+  "scope_en": [
+    "Execution of complete restaurant interior fit-out and finishing works",
+    "Partitioning and interior build-up works to match the dining concept across two floors",
+    "High-quality finishes including walls, ceilings, flooring, paint, and decorative elements",
+    "Installation and coordination of lighting elements to achieve the intended ambience",
+    "Coordination of MEP interfaces required for restaurant operations (as applicable)",
+    "Final snagging, detailing, and handover as a fully operational restaurant space"
+  ],
+  "scope_ar": [
+    "تنفيذ أعمال التجهيز الداخلي والتشطيبات للمطعم بالكامل",
+    "تنفيذ التقسيمات والأعمال الداخلية بما يتناسب مع مفهوم الجلسات على طابقين",
+    "تشطيبات عالية الجودة تشمل الجدران والأسقف والأرضيات والدهانات والعناصر الديكورية",
+    "تركيب وتنسيق عناصر الإضاءة لتحقيق الأجواء المطلوبة",
+    "تنسيق متطلبات الأعمال الكهروميكانيكية اللازمة للتشغيل (حسب الحاجة)",
+    "معالجة الملاحظات النهائية وتسليم موقع جاهز للتشغيل"
+  ],
+  "deliverables_en": [
+    "Fully operational and ready-to-open restaurant space",
+    "Distinctive dining ambience aligned with the Canvas concept",
+    "High-quality interior finishes and detailing",
+    "Consistent execution across both floors"
+  ],
+  "deliverables_ar": [
+    "تسليم مطعم جاهز للافتتاح والتشغيل بالكامل",
+    "أجواء ضيافة مميزة متوافقة مع مفهوم Canvas",
+    "تشطيبات داخلية عالية الجودة وتفاصيل دقيقة",
+    "اتساق في التنفيذ بين الطابقين"
+  ],
+  "img": "/innerpages/assets/img/s_project/canvas_1.jpg",
+  "gallery": [
+    "/innerpages/assets/img/s_project/canvas_1.jpg",
+    "/innerpages/assets/img/s_project/canvas_2.jpg",
+    "/innerpages/assets/img/s_project/canvas_3.jpg",
+    "/innerpages/assets/img/s_project/canvas_4.jpg"
+  ]
+}
+
+
+
+
 ]

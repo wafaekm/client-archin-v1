@@ -1,9 +1,8 @@
-export default function ArLayout({ children }) {
+export default function RootLayout({ children }) {
     return (
-      <>
-        <link rel="stylesheet" href="/common/assets/css/lib/bootstrap.rtl.min.css" />
-        <div dir="rtl" lang="ar">{children}</div>
-      </>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
     );
   }
   

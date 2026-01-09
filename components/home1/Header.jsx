@@ -77,7 +77,7 @@ function Header() {
                           {item.desc}
                         </div>
                         <a
-                          href="#"
+                          href="#footer"
                           className="butn border rounded-pill mt-60 hover-orange"
                         >
                           <span>

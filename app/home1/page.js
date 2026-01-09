@@ -15,13 +15,13 @@ import Blog from '@/components/home1/Blog';
 import Chat from '@/components/home1/Chat';
 import Footer from '@/components/home1/Footer';
 import TemplateScripts from "@/components/common/TemplateScripts";
-
+import Milestones from '@/components/home1/Milestones';
 
 export const metadata = {
-  title: 'archin',
+  title: 'روح المقاولة',
   icons: {
-    icon: '/home_preview/assets/img/fav.png',
-    shortcut: '/home_preview/assets/img/fav.png',
+    icon: '/home_preview/assets/img/favicon.png',
+    shortcut: '/home_preview/assets/img/favicon.png',
     other: generateStylesheetObject([
       '/common/assets/css/lib/bootstrap.min.css',
       '/common/assets/css/lib/all.min.css',
@@ -53,24 +53,22 @@ export default function Home() {
             <Process />
             <Projects />
             <Testimonials />
-            <Awards />
+            <Milestones />
             <Team />
-            <Blog />
-            <Chat />
             {/*
              */}
           </main>
           <Footer />
         </div>
       </div>
-      <Script
+      {/* <Script
         src="/common/assets/js/ScrollTrigger.min.js"
         strategy="beforeInteractive"
       />
       <Script
         src="/common/assets/js/ScrollSmoother.min.js"
         strategy="beforeInteractive"
-      />
+      /> */}
       {/* <Script
         src="/landing-preview/assets/js/parallax.min.js"
         strategy="beforeInteractive"
@@ -107,10 +105,10 @@ export default function Home() {
         strategy="beforeInteractive"
         src="/common/assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script> */}
-      <Script
+      {/* <Script
         src="/common/assets/js/smoother-script.js"
         strategy="lazyOnload"
-      />
+      /> */}
       <Script src="/common/assets/js/scripts.js"></Script>
       <TemplateScripts />
 

@@ -4,6 +4,8 @@ import initIsotope from '@/common/initIsotope';
 import data1 from '@/data/home1/projects/projects1';
 import { Autoplay, Mousewheel, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from "next/link";
+
 function Projects() {
   const swiperOptions = {
     modules: [Navigation, Pagination, Mousewheel, Autoplay],
@@ -57,40 +59,40 @@ function Projects() {
   // };
   // const floatBoxRef = useRef(null);
 
-  useEffect(() => {
-    const cursor = document.querySelector('.float-cursor');
-    const handleMouseMove = (e) => {
-      // const parentOffset =
-      //   floatBoxRef.current.parentElement.getBoundingClientRect();
-      const relX = e.offsetX;
-      const relY = e.offsetY;
-      // console.log('x', relX, 'y', relY);
-      console.log(e);
-      cursor.style.left = relX * 2 + 'px';
-      cursor.style.top = relY + 'px';
-      cursor.classList.add('show');
-    };
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.float-cursor');
+  //   const handleMouseMove = (e) => {
+  //     // const parentOffset =
+  //     //   floatBoxRef.current.parentElement.getBoundingClientRect();
+  //     const relX = e.offsetX;
+  //     const relY = e.offsetY;
+  //     // console.log('x', relX, 'y', relY);
+  //     console.log(e);
+  //     cursor.style.left = relX * 2 + 'px';
+  //     cursor.style.top = relY + 'px';
+  //     cursor.classList.add('show');
+  //   };
 
-    const handleMouseLeave = () => {
-      document.querySelector('.float-cursor').classList.remove('show');
-    };
+  //   const handleMouseLeave = () => {
+  //     document.querySelector('.float-cursor').classList.remove('show');
+  //   };
 
-    document
-      .querySelector('.float_box_container')
-      .addEventListener('mousemove', handleMouseMove);
-    document
-      .querySelector('.float_box_container')
-      .addEventListener('mouseleave', handleMouseLeave);
+  //   document
+  //     .querySelector('.float_box_container')
+  //     .addEventListener('mousemove', handleMouseMove);
+  //   document
+  //     .querySelector('.float_box_container')
+  //     .addEventListener('mouseleave', handleMouseLeave);
 
-    return () => {
-      document
-        .querySelector('.float_box_container')
-        .removeEventListener('mousemove', handleMouseMove);
-      document
-        .querySelector('.float_box_container')
-        .removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, []);
+  //   return () => {
+  //     document
+  //       .querySelector('.float_box_container')
+  //       .removeEventListener('mousemove', handleMouseMove);
+  //     document
+  //       .querySelector('.float_box_container')
+  //       .removeEventListener('mouseleave', handleMouseLeave);
+  //   };
+  // }, []);
   return (
     <section className="tc-projects-style1">
       <div className="container">
@@ -198,25 +200,29 @@ function Projects() {
                           </a>
                           <div className="info">
                             <div className="tags">
-                              <a href="#"> {item.sub1} </a>
-                              <a href="#"> {item.sub2} </a>
+                            <a href="#">Turnkey</a>
+                            <a href="#">MEP</a>
                             </div>
                             <h3 className="title">
-                              <a href="#"> {item.title} </a>
+                               <Link href={`/en/projects/${item.slug}`}>{item.title_en}</Link>
                             </h3>
-                            <div className="text">{item.desc}</div>
+
+                            <div className="text">
+                              {(item.overview_en || "").slice(0, 140)}...
+                            </div>
+
                           </div>
                         </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
                 </div>
-                <div
+                {/* <div
                   // ref={floatBoxRef}
                   className="float-cursor float_box"
                 >
                   Hold <br /> and Drag
-                </div>
+                </div> */}
               </div>
             </div>
             <div

@@ -3,6 +3,12 @@ import React from 'react';
 import data from '@/data/home1-rtl/header-slider';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Parallax, Pagination, Mousewheel } from 'swiper';
+import { Cairo } from 'next/font/google';
+
+const cairo = Cairo({
+  subsets: ['arabic'],
+  weight: ['300', '400', '600', '700'],
+});
 
 function Header() {
   const swiperOptions = {
@@ -21,23 +27,18 @@ function Header() {
     spaceBetween: 0,
     centeredSlides: true,
     speed: 1500,
-    // mousewheel: true,
     parallax: true,
-    pagination: {
-      el: '.header-slider .swiper-pagination',
-      type: 'fraction',
-    },
+    pagination: { el: '.header-slider .swiper-pagination', type: 'fraction' },
     navigation: {
       nextEl: '.header-slider .swiper-button-next',
       prevEl: '.header-slider .swiper-button-prev',
     },
     mousewheel: false,
     keyboard: true,
-    autoplay: {
-      delay: 6000,
-    },
+    autoplay: { delay: 6000 },
     loop: true,
   };
+
   return (
     <header className="tc-header-style1">
       <div className="header-slider">
@@ -48,36 +49,46 @@ function Header() {
                 <div className="img">
                   <img src={item.img} alt="" className="img-cover" />
                 </div>
+
                 <div className="info section-padding-x pb-70">
                   <div className="row align-items-end gx-5">
                     <div className="col-lg-6 offset-lg-2">
-                      <h1 data-swiper-parallax="-2000" className="" style={{ fontSize: "100px", lineHeight: "1.1" }}> 
+                      <h1
+                        data-swiper-parallax="-2000"
+                        className={cairo.className}
+                        style={{ fontSize: '100px', lineHeight: '1.1' }}
+                      >
                         {item.title}
                       </h1>
-                      <h5 className="fsz-30 mt-30 fw-400">{item.subTitle}</h5>
+
+                      <h5 className={`fsz-30 mt-30 fw-400 ${cairo.className}`}>
+                        {item.subTitle}
+                      </h5>
                     </div>
+
                     <div className="col-lg-3">
                       <div className="cont pb-30">
-                        <div className="text fsz-17 fw-300 lh-4">
+                        <div className={`text fsz-17 fw-300 lh-4 ${cairo.className}`}>
                           {item.desc}
                         </div>
-                        <a
-                          href="#"
-                          className="butn border rounded-pill mt-60 hover-orange"
-                        >
+
+                        <a href="#footer" className="butn border rounded-pill mt-60 hover-orange">
                           <span>
-                          احصل على عرض أسعار الآن
+                            احصل على عرض أسعار الآن
                             <i className="small ms-1 ti-arrow-top-right"></i>
                           </span>
                         </a>
                       </div>
                     </div>
+
                   </div>
                 </div>
+
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+
         <div className="slider-controls">
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>

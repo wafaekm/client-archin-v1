@@ -1250,3 +1250,13 @@ html[lang=ar] .home-style1 .tc-chat-style1 .c-line {
 html[lang=ar] .home-style1 .loader-wrap {
   direction: ltr;
 }
+/* Restore default cursor after removing custom "hold and drag" cursor */
+.tc-projects-style1,
+.tc-projects-style1 * {
+  cursor: auto !important;
+}
+
+.tc-projects-style1 a,
+.tc-projects-style1 button {
+  cursor: pointer !important;
+}
