@@ -51,11 +51,11 @@ function Navbar() {
                 <i className="la la-search"></i>{" "}
               </span>
             </a>
-            <a href="#" className="icon ms-3 side_menu_btn fsz-21">
+            {/* <a href="#" className="icon ms-3 side_menu_btn fsz-21">
               <span>
                 <i className="la la-grip-lines"></i>{" "}
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

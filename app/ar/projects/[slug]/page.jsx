@@ -4,7 +4,6 @@ import generateStylesheetObject from "@/common/generateStylesheetsObject";
 import BodyClass from "@/components/common/BodyClass";
 import Loader from "@/components/common/Loader";
 import Footer from "@/components/innerpage/Footer";
-import Menu from "@/components/innerpage/Menu";
 import Navbar2 from "@/components/innerpage/Navbar2";
 
 import Project from "@/components/innerpage/single_project/Project";
@@ -54,7 +53,6 @@ export default function ProjectPage({ params }) {
       <BodyClass className="inner-pages-style1 s-project-pg-style1" />
 
       <Loader />
-      <Menu />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -63,8 +61,8 @@ export default function ProjectPage({ params }) {
             <Project project={project} lang="ar" />
             <Commitments lang="ar" />
             <RelatedProjects lang="ar" currentSlug={project.slug} />
-            <Chat />
-          </main>
+            <Chat lang="ar" />
+            </main>
           <Footer />
         </div>
       </div>

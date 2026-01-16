@@ -107,21 +107,21 @@ function Process() {
               </div>
             </div>
 
-            <div className="col-lg-4 offset-lg-3 process-media-col">
-              <div className="img wow">
-                <img
-                  src="/home1/assets/img/ar_imgs/process.png"
-                  alt=""
-                  className="img-cover"
-                />
-              </div>
-            </div>
+            <div
+  className="col-lg-4 offset-lg-3 process-media-col"
+  style={{ paddingInlineStart: 80 }}
+>
+  <div className="img wow">
+    <img src="/home1/assets/img/ar_imgs/process.png" alt="" className="img-cover" />
+  </div>
+</div>
+
 
           </div>
         </div>
       </div>
 
-      <img src="/home1/assets/img/c_line2.png" alt="" className="c-line wow" />
+      <img src="/home1/assets/img/c_line.png" alt="" className="c-line wow" />
     </section>
   );
 }

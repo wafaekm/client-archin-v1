@@ -42,7 +42,6 @@ export default function Home() {
   return (
     <body className="home-style1">
       <Loader />
-      <Menu />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Navbar />

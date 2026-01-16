@@ -4,7 +4,6 @@ import generateStylesheetObject from "@/common/generateStylesheetsObject";
 import BodyClass from "@/components/common/BodyClass";
 import Loader from "@/components/common/Loader";
 import Footer from "@/components/innerpage/Footer";
-import Menu from "@/components/innerpage/Menu";
 import Navbar2 from "@/components/innerpage/Navbar2";
 
 import Project from "@/components/innerpage/single_project/Project";
@@ -59,7 +58,6 @@ export function generateStaticParams() {
         />
   
         <Loader />
-        <Menu />
   
         <div id="smooth-wrapper">
           <div id="smooth-content">
@@ -68,8 +66,8 @@ export function generateStaticParams() {
               <Project project={project} lang="en" />
               <Commitments />
               <RelatedProjects lang="en" currentSlug={project.slug} />
-              <Chat />
-            </main>
+              <Chat lang="en" />
+              </main>
             <Footer />
           </div>
         </div>

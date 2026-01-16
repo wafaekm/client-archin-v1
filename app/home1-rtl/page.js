@@ -45,7 +45,6 @@ export default function Home() {
       <BodyClass className="home-style1" />
 
       <Loader />
-      <Menu />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">

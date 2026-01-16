@@ -41,7 +41,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#footer">
                 تواصل معنا
               </a>
             </li>
@@ -61,11 +61,11 @@ function Navbar() {
               </span>
             </a>
 
-            <a href="#" className="icon ms-3 side_menu_btn fsz-21">
+            {/* <a href="#" className="icon ms-3 side_menu_btn fsz-21">
               <span onClick={openSideMenu}>
                 <i className="la la-grip-lines"></i>
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

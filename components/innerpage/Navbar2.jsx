@@ -84,7 +84,7 @@ function Navbar2() {
               </span>
             </a>
 
-            <a
+            {/* <a
               href="#"
               onClick={openSideMenu}
               className="icon ms-3 side_menu_btn fsz-21 d-none d-lg-inline-block"
@@ -92,7 +92,7 @@ function Navbar2() {
               <span>
                 <i className="la la-grip-lines"></i>
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

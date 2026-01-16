@@ -184,9 +184,22 @@ body.home-style1 h1.js-title {
 html {
   scroll-behavior: smooth;
 }
-/* Plus d'espace entre l'accordéon et l'image */
+
 @media (min-width: 992px) {
+  /* Espace entre la colonne texte et la colonne image */
   .tc-process-style1 .process-media-col {
-    padding-left: 50px; /* augmente à 70px si tu veux */
+    padding-inline-start: 120px !important; /* augmente à 120 si besoin */
   }
+}
+/* Process: déplacer la ligne (c-line) à gauche */
+.tc-process-style1 .c-line{
+  right: auto !important;
+  left: 0 !important;      /* ajuste: 0 / 20px / 5% */
+  /* si elle est trop collée en bas ou ailleurs, ajuste aussi bottom/top */
+}
+.tc-projects-style1 .project-card .tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;            /* espace entre les tags */
+  align-items: center;
 }

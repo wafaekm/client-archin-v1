@@ -4,7 +4,6 @@ import Loader from '@/components/common/Loader';
 import Footer from '@/components/innerpage/Footer';
 import Menu from '@/components/innerpage/Menu';
 import Navbar2 from '@/components/innerpage/Navbar2';
-import StartButton from '@/components/home5_residence/StartButton';
 import Header from '@/components/innerpage/contact/Header';
 import ContactInfo from '@/components/innerpage/contact/ContactInfo';
 import Map from '@/components/innerpage/contact/Map';
@@ -51,7 +50,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-      <StartButton />
       <Script
         src="/common/assets/js/ScrollTrigger.min.js"
         strategy="beforeInteractive"

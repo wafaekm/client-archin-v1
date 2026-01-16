@@ -21,17 +21,9 @@ function Footer() {
 
                 <div className="foot-social mt-50">
                   {/* Remplace les # par les vrais liens */}
-                  <a href="#" aria-label="X">
-                    <i className="fab fa-x-twitter"></i>
-                  </a>
-                  <a href="#" aria-label="Instagram">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#" aria-label="LinkedIn">
+                
+                  <a href="https://www.linkedin.com/company/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%AF%D9%8A%D9%85%D8%A7-%D8%B3%D8%AA%D8%A7%D8%B1-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9/posts/?feedView=all" aria-label="LinkedIn">
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" aria-label="YouTube">
-                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
               </div>

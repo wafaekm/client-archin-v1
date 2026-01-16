@@ -4,18 +4,36 @@ import React from "react";
 function Project({ project, lang = "en" }) {
   const isAr = lang === "ar";
 
-  const title = isAr ? project.title_ar || project.title_en : project.title_en;
-  const subTitle = isAr ? project.subTitle_ar || project.subTitle_en : project.subTitle_en;
+  // IMPORTANT: prevent crash during prerender/build
+  if (!project) {
+    return (
+      <section className="tc-project-style1 header" dir={isAr ? "rtl" : "ltr"}>
+        <div className="main-info">
+          <div className="container">
+            <h1 className="title">{isAr ? "المشروع غير موجود" : "Project not found"}</h1>
+            <div className="text color-666 mt-20">
+              {isAr
+                ? "تعذر تحميل بيانات هذا المشروع. الرجاء العودة إلى صفحة المشاريع."
+                : "We couldn't load this project data. Please go back to the projects list."}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
-  const overviewRaw = isAr ? project.overview_ar || project.overview_en : project.overview_en;
+  const title = isAr ? (project.title_ar || project.title_en) : project.title_en;
+  const subTitle = isAr ? (project.subTitle_ar || project.subTitle_en) : project.subTitle_en;
+
+  const overviewRaw = isAr ? (project.overview_ar || project.overview_en) : project.overview_en;
   const overviewParagraphs = (overviewRaw || "").split("\n").filter(Boolean);
 
-  const services = isAr ? project.services_ar || project.services_en : project.services_en;
-  const location = isAr ? project.location_ar || project.location_en : project.location_en;
-  const status = isAr ? project.status_ar || project.status_en : project.status_en;
+  const services = isAr ? (project.services_ar || project.services_en) : project.services_en;
+  const location = isAr ? (project.location_ar || project.location_en) : project.location_en;
+  const status = isAr ? (project.status_ar || project.status_en) : project.status_en;
 
-  const scope = isAr ? project.scope_ar || project.scope_en : project.scope_en;
-  const deliverables = isAr ? project.deliverables_ar || project.deliverables_en : project.deliverables_en;
+  const scope = isAr ? (project.scope_ar || project.scope_en) : project.scope_en;
+  const deliverables = isAr ? (project.deliverables_ar || project.deliverables_en) : project.deliverables_en;
 
   const gallery = Array.isArray(project.gallery) ? project.gallery : [];
   const heroImg = project.img || "/innerpages/assets/img/s_project/m1.jpg";

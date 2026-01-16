@@ -1,29 +1,37 @@
 "use client";
 import React from "react";
 
-function Chat() {
+function Chat({ lang = "en" }) {
+  const isAr = lang === "ar";
+
+  const t = {
+    email: "info@rohalmokawlah.com",
+    title: isAr
+      ? "جاهز لمناقشة مشروعك؟\nنرد خلال 24 ساعة."
+      : "Ready to discuss your project?\nWe reply within 24 hours.",
+    call: isAr ? "اتصل بنا" : "Call Us",
+    whatsapp: "WhatsApp",
+  };
+
   return (
-    <section className="tc-chat-style1">
+    <section className="tc-chat-style1" dir={isAr ? "rtl" : "ltr"}>
       <div className="container">
         <div className="content">
-          {/* Email */}
-          <a href="mailto:info@rohalmokawlah.com" className="xl-text js-splittext-lines">
-           info@rohalmokawlah.com
+          <a href={`mailto:${t.email}`} className="xl-text js-splittext-lines">
+            {t.email}
           </a>
 
-          {/* Message */}
-          <h5 className="mb-30 lh-5">
-            Ready to discuss your project? <br /> We reply within 24 hours.
+          <h5 className="mb-30 lh-5" style={{ whiteSpace: "pre-line" }}>
+            {t.title}
           </h5>
 
-          {/* Contacts (simple, propre) */}
           <div className="d-flex flex-wrap align-items-center gap-3">
             <a
               href="tel:+966541319776"
               className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
             >
               <span>
-                Call Us <i className="fal fa-phone ms-2"></i>
+                {t.call} <i className="fal fa-phone ms-2"></i>
               </span>
             </a>
 
@@ -35,16 +43,19 @@ function Chat() {
               style={{ borderColor: "#ccc", color: "#000" }}
             >
               <span>
-                WhatsApp <i className="fab fa-whatsapp ms-2"></i>
+                {t.whatsapp} <i className="fab fa-whatsapp ms-2"></i>
               </span>
             </a>
-
-          
           </div>
         </div>
       </div>
 
-      <img src="/innerpages/assets/img/c_line4.png" alt="" className="c-line wow" />
+      <img
+  src="/innerpages/assets/img/c_line4.png"
+  alt=""
+  className="c-line wow"
+  style={isAr ? { left: 0, right: "auto" } : { right: 0, left: "auto" }}
+/>
     </section>
   );
 }

@@ -80,15 +80,14 @@ function Projects({ lang = "ar" }) {
         </div>
 
         <div className="text-end mt-40">
-          <Link
-            href={`/${isAr ? "ar" : "en"}/projects`}
+          <a href="#"
             className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
           >
             <span>
               شاهد جميع المشاريع
               <i className="small ms-1 ti-arrow-top-right"></i>
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
