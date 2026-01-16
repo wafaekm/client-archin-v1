@@ -64,9 +64,9 @@ function Footer() {
               <div className="branch-card">
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Quick Links </h5>
                 <ul className="footer-links">
-                  <li><Link href="/en">Home</Link></li>
-                  <li><Link href="/en/projects">Projects</Link></li>
-                  <li><Link href="/en/contact">Contact</Link></li>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/">Projects</Link></li>
+                  <li><Link href="/">Contact</Link></li>
                 </ul>
               </div>
 
@@ -89,9 +89,9 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0">
-                <Link href="/en">Home</Link>
-                <Link href="/en/projects">Projects</Link>
-                <Link href="/en/contact">Contact</Link>
+                <Link href="/">Home</Link>
+                <Link href="/">Projects</Link>
+                <Link href="/">Contact</Link>
               </div>
             </div>
           </div>

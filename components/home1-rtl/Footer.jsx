@@ -113,8 +113,8 @@ function Footer() {
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0 ar-block">
                 <a href="/home1-rtl">الرئيسية</a>
-                <a href="/home1-rtl/projects">المشاريع</a>
-                <a href="/home1-rtl/contact">تواصل</a>
+                <a href="/home1-rtl/">المشاريع</a>
+                <a href="/home1-rtl/">تواصل</a>
               </div>
             </div>
           </div>

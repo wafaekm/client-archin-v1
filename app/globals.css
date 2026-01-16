@@ -150,19 +150,79 @@ body.home-style1 h1.js-title {
   border: 0;
 }
 
-/* ✅ Footer EN: fond orange clair (uniquement) */
-.tc-footer-style1.en-footer-fix{
-  background: #FFF1E6; /* orange clair */
-}
 
-/* Garder le fond transparent à l'intérieur pour éviter des blocs blancs */
+
+
+
+/* =========================
+   FOOTER FULL-WIDTH FIX
+   ========================= */
+
+/* Optionnel: fond EN identique à RTL si tu veux */
+.tc-footer-style1.en-footer-fix{
+  background: #FFF1E6 !important;
+}
 .tc-footer-style1.en-footer-fix .top-content,
 .tc-footer-style1.en-footer-fix .foot{
-  background: transparent;
+  background: transparent !important;
 }
 
-/* Map frame (même principe que rtl-footer-fix) */
-.en-footer-fix .footer-map{
+/* FULL BLEED: sort du max-width/padding du template */
+.tc-footer-style1 .footer-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Neutralise les margins/paddings du template sur le grid dans le footer */
+.tc-footer-style1 .footer-bleed .row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.tc-footer-style1 .footer-bleed .row > *{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Desktop: padding “confort” par colonne, sans casser le bord à bord */
+@media (min-width: 992px){
+  .tc-footer-style1.en-footer-fix .footer-left{
+    padding-left: 4vw !important;
+    padding-right: 2vw !important;
+  }
+
+  .tc-footer-style1.en-footer-fix .footer-right{
+    padding-left: 2vw !important;
+    padding-right: 4vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   /* bloc à droite */
+    text-align: right;       /* texte à droite */
+  }
+
+  /* Supprime indentation éventuelle */
+  .tc-footer-style1.en-footer-fix .footer-right .footer-links{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Mobile: padding standard + logo centré */
+@media (max-width: 991px){
+  .tc-footer-style1.en-footer-fix .footer-left,
+  .tc-footer-style1.en-footer-fix .footer-right{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .tc-footer-style1.en-footer-fix .footer-right{
+    align-items: stretch;
+    text-align: left;
+  }
+}
+
+/* Map frame (si pas déjà défini ailleurs, safe) */
+.tc-footer-style1 .footer-map{
   position: relative;
   width: 100%;
   height: 260px;
@@ -171,35 +231,27 @@ body.home-style1 h1.js-title {
   border: 1px solid rgba(0,0,0,0.08);
   background: #f7f7f7;
 }
-
-.en-footer-fix .footer-map iframe{
+.tc-footer-style1 .footer-map iframe{
   width: 100%;
   height: 260px;
   display: block;
   border: 0;
 }
-.en-footer-fix .footer-right-col{
-  padding-left: 190px; /* augmente si besoin */
-}
-html {
-  scroll-behavior: smooth;
-}
 
-@media (min-width: 992px) {
-  /* Espace entre la colonne texte et la colonne image */
-  .tc-process-style1 .process-media-col {
-    padding-inline-start: 120px !important; /* augmente à 120 si besoin */
+/* Logo sizing: IMPORTANT (tu utilises className="footer-logo") */
+.tc-footer-style1 .footer-logo{
+  width: 180px !important;     /* ajuste: 140 / 160 / 180 */
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+.tc-footer-style1 .footer-logo-wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991px){
+  .tc-footer-style1 .footer-logo-wrap{
+    justify-content: center;
   }
 }
-/* Process: déplacer la ligne (c-line) à gauche */
-.tc-process-style1 .c-line{
-  right: auto !important;
-  left: 0 !important;      /* ajuste: 0 / 20px / 5% */
-  /* si elle est trop collée en bas ou ailleurs, ajuste aussi bottom/top */
-}
-.tc-projects-style1 .project-card .tags{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;            /* espace entre les tags */
-  align-items: center;
-}
+
