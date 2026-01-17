@@ -82,7 +82,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /client-archin-v1
+          NEXT_PUBLIC_DEPLOY_TARGET: gh
 
 
   # Deployment job
