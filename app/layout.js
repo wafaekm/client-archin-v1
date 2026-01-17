@@ -1,11 +1,11 @@
 import "./globals.css";
-import { BASE_PATH } from "@/lib/basePath";
+import BASE_PATH from "@/common/basePath";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
-        
+        {/* CSS locaux (GitHub Pages) */}
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/bootstrap.min.css`} />
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/all.min.css`} />
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/line-awesome.css`} />
@@ -16,16 +16,18 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/swiper8.min.css`} />
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/common_style.css`} />
         <link rel="stylesheet" href={`${BASE_PATH}/home1/assets/css/home_1_style.css`} />
+
+        {/* Fonts externes : PAS de BASE_PATH */}
         <link
           rel="stylesheet"
-          href={`${BASE_PATH}/https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         />
         <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
-          />
-
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+        />
       </head>
+
       <body>{children}</body>
     </html>
   );
