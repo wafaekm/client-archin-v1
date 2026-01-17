@@ -14,6 +14,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
   images: { unoptimized: true },
 };
 
