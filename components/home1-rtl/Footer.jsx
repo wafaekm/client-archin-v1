@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import BASE_PATH from "@/common/basePath";
 
 function Footer() {
   // Center: Al Khobar (close to Dammam)
@@ -17,16 +19,21 @@ function Footer() {
 
   return (
     // On garde la grille Bootstrap en LTR, et on met le contenu en RTL via classes CSS.
-<footer id="footer" className="tc-footer-style1 border-top rtl-footer-fix" dir="ltr">
-<div className="container">
+    <footer
+      id="footer"
+      className="tc-footer-style1 border-top rtl-footer-fix"
+      dir="ltr"
+    >
+      <div className="container">
         <div className="top-content section-padding">
           <div className="row gx-0 justify-content-between">
             {/* LEFT */}
             <div className="col-lg-5">
               <div className="info-side ar-block">
                 <div className="text fsz-24 color-333 lh-3 fw-600">
-                  نقدم حلول مقاولات بنظام تسليم مفتاح مع التركيز على الجودة والسلامة
-                  والالتزام بمواعيد التسليم في جميع أنحاء المملكة العربية السعودية.
+                  نقدم حلول مقاولات بنظام تسليم مفتاح مع التركيز على الجودة
+                  والسلامة والالتزام بمواعيد التسليم في جميع أنحاء المملكة
+                  العربية السعودية.
                 </div>
 
                 <div className="foot-social mt-50">
@@ -36,7 +43,7 @@ function Footer() {
                     rel="noreferrer"
                     aria-label="LinkedIn"
                   >
-                    <i className="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
 
@@ -58,7 +65,9 @@ function Footer() {
                       العنوان الرئيسي
                     </small>
                     <div className="fsz-16 fw-600 mb-1">المقر الرئيسي</div>
-                    <div className="fsz-16 color-666">الخبر / الدمام، السعودية</div>
+                    <div className="fsz-16 color-666">
+                      الخبر / الدمام، السعودية
+                    </div>
                   </div>
                 </div>
               </div>
@@ -85,14 +94,20 @@ function Footer() {
               <div className="branch-card ar-block">
                 <h5 className="mb-20 mt-5 fw-600">الخدمات</h5>
                 <ul className="footer-links">
-                  <li><a href="#">تصميم وتنفيذ / تسليم مفتاح</a></li>
-                  <li><a href="#">MEP / HVAC / أنظمة مكافحة الحريق</a></li>
-                  <li><a href="#">التجهيز الداخلي والتشطيبات</a></li>
+                  <li>
+                    <a href="#">تصميم وتنفيذ / تسليم مفتاح</a>
+                  </li>
+                  <li>
+                    <a href="#">MEP / HVAC / أنظمة مكافحة الحريق</a>
+                  </li>
+                  <li>
+                    <a href="#">التجهيز الداخلي والتشطيبات</a>
+                  </li>
                 </ul>
 
                 <div className="mt-30">
                   <img
-                    src="home_preview/assets/img/exp-logo.png"
+                    src={`${BASE_PATH}/home_preview/assets/img/exp-logo.png`}
                     alt="شعار الشركة"
                     style={{ maxWidth: 160, height: "auto", display: "block" }}
                   />
@@ -112,9 +127,10 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0 ar-block">
-                <a href="home1-rtl">الرئيسية</a>
-                <a href="home1-rtl/">المشاريع</a>
-                <a href="home1-rtl/">تواصل</a>
+                {/* Liens internes ABSOLUS */}
+                <Link href="/home1-rtl">الرئيسية</Link>
+                <Link href="/home1-rtl#projects">المشاريع</Link>
+                <Link href="/home1-rtl#footer">تواصل</Link>
               </div>
             </div>
           </div>

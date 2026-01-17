@@ -1,13 +1,20 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
+import BASE_PATH from "@/common/basePath";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x">
       <div className="container-fluid content">
-        <a className="navbar-brand" href="#">
-          <img src="home1/assets/img/logo.png" alt="" className="logo" />
-        </a>
+        {/* Logo: pas de href="#" */}
+        <Link className="navbar-brand" href="/en">
+          <img
+            src={`${BASE_PATH}/home1/assets/img/logo.png`}
+            alt="Logo"
+            className="logo"
+          />
+        </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -19,43 +26,42 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" href="/en">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="/en#projects">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="/en/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
+
           <div className="nav-side">
-            <Link href="" className="icon ms-3">
+            {/* Lang switch: toujours des chemins ABSOLUS */}
+            <Link href="/en" className="icon ms-3">
               <span> EN </span>
             </Link>
 
-            <Link href="home1-rtl" className="icon ms-3">
+            <Link href="/home1-rtl" className="icon ms-3">
               <span> AR </span>
             </Link>
 
-            <a href="#" className="icon ms-5 fsz-21">
+            {/* évite href="#" (ça “reste sur place”) */}
+            <button type="button" className="icon ms-5 fsz-21 btn btn-link p-0">
               <span>
-                <i className="la la-search"></i>{" "}
+                <i className="la la-search"></i>
               </span>
-            </a>
-            {/* <a href="#" className="icon ms-3 side_menu_btn fsz-21">
-              <span>
-                <i className="la la-grip-lines"></i>{" "}
-              </span>
-            </a> */}
+            </button>
           </div>
         </div>
       </div>
