@@ -50,7 +50,7 @@ function Mobile() {
           </div>
           <div className="col-lg-3 offset-lg-1">
             <div className="img">
-              <img src="/home_preview/assets/img/layout.png" alt="" />
+              <img src="home_preview/assets/img/layout.png" alt="" />
             </div>
           </div>
           <div className="col-lg-3">
@@ -58,7 +58,7 @@ function Mobile() {
               className="img mt-5 mt-lg-0 wow zoomIn slow"
               data-wow-delay="0.4s"
             >
-              <img src="/home_preview/assets/img/mobile.png" alt="" />
+              <img src="home_preview/assets/img/mobile.png" alt="" />
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ function Mobile() {
           </Swiper>
         </div>
       </div>
-      <img src="/home_preview/assets/img/pattern.png" alt="" className="patt" />
+      <img src="home_preview/assets/img/pattern.png" alt="" className="patt" />
     </section>
   );
 }

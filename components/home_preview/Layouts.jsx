@@ -18,31 +18,31 @@ function Layouts() {
               <div className="icon-cards">
                 <div className="item">
                   <div className="icon">
-                    <img src="/home_preview/assets/img/l1.png" alt="" />
+                    <img src="home_preview/assets/img/l1.png" alt="" />
                   </div>
                   <p className="fsz-11"> Project Slider </p>
                 </div>
                 <div className="item">
                   <div className="icon">
-                    <img src="/home_preview/assets/img/l2.png" alt="" />
+                    <img src="home_preview/assets/img/l2.png" alt="" />
                   </div>
                   <p className="fsz-11"> Masonry </p>
                 </div>
                 <div className="item">
                   <div className="icon">
-                    <img src="/home_preview/assets/img/l3.png" alt="" />
+                    <img src="home_preview/assets/img/l3.png" alt="" />
                   </div>
                   <p className="fsz-11"> ProCarousel </p>
                 </div>
                 <div className="item">
                   <div className="icon">
-                    <img src="/home_preview/assets/img/l4.png" alt="" />
+                    <img src="home_preview/assets/img/l4.png" alt="" />
                   </div>
                   <p className="fsz-11"> classic Grid </p>
                 </div>
                 <div className="item">
                   <div className="icon">
-                    <img src="/home_preview/assets/img/l5.png" alt="" />
+                    <img src="home_preview/assets/img/l5.png" alt="" />
                   </div>
                   <p className="fsz-11"> Parallax </p>
                 </div>
@@ -54,9 +54,9 @@ function Layouts() {
               className="img wow zoomIn slow mt-5 mt-lg-0"
               data-wow-delay="0.4s"
             >
-              <img src="/home_preview/assets/img/layout.png" alt="" />
+              <img src="home_preview/assets/img/layout.png" alt="" />
               <img
-                src="/home_preview/assets/img/layout1.png"
+                src="home_preview/assets/img/layout1.png"
                 alt=""
                 className="sub-img img-contain"
                 data-speed="1.2"
@@ -66,7 +66,7 @@ function Layouts() {
         </div>
       </div>
       <img
-        src="/home_preview/assets/img/circle.png"
+        src="home_preview/assets/img/circle.png"
         alt=""
         className="circle rotate-center"
       />

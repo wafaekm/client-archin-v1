@@ -3,18 +3,18 @@
     "title": "روح المقاولة",
     "subTitle": "للمقاولات العامة",
     "desc": "نستجيب بسرعة لضمان استمرارية أعمالك: تشخيص وإصلاح وصيانة وقائية عبر فريق فني معتمد مع الالتزام",
-    "img": "/home1/assets/img/head_slide1.jpg"
+    "img": "home1/assets/img/head_slide1.jpg"
   },
   {
     "title": "خدمة موثوقة",
     "subTitle": "دعم ميداني احترافي",
     "desc": "خدمات تدخل احترافية للمنازل والشركات—جودة عالية، تقارير واضحة، والتزام بالمواعيد",
-    "img": "/home1/assets/img/head_slide2.jpg"
+    "img": "home1/assets/img/head_slide2.jpg"
   },
   {
     "title": "سلامة والتزام",
     "subTitle":"فنيون معتمدون",
     "desc": "من الفحص إلى الإصلاح، نعمل وفق المعايير المعتمدة مع معدات السلامة والتوثيق والالتزام بمتطلبات الموقع",
-    "img": "/home1/assets/img/head_slide3.jpg"
+    "img": "home1/assets/img/head_slide3.jpg"
   }
 ]

@@ -12,7 +12,7 @@ function MainVideo() {
         loop={true}
       >
         <source
-          src="/innerpages/assets/img/s_project2/video.mp4"
+          src="innerpages/assets/img/s_project2/video.mp4"
           type="video/mp4"
         />
       </video>

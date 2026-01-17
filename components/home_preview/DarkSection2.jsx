@@ -126,7 +126,7 @@ function DarkSection2() {
                 ))}
 
                 <img
-                  src="/home_preview/assets/img/faq_bg.png"
+                  src="home_preview/assets/img/faq_bg.png"
                   alt=""
                   className="bg"
                 />
@@ -204,7 +204,7 @@ function DarkSection2() {
             </div>
           </div>
           <img
-            src="/home_preview/assets/img/foot_img.png"
+            src="home_preview/assets/img/foot_img.png"
             alt=""
             className="img"
           />

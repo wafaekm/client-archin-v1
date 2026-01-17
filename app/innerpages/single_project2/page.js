@@ -52,54 +52,54 @@ export default function Home() {
         </div>
       </div>
       <Script
-        src="/common/assets/js/ScrollTrigger.min.js"
+        src="common/assets/js/ScrollTrigger.min.js"
         strategy="beforeInteractive"
       />
       <Script
-        src="/common/assets/js/ScrollSmoother.min.js"
+        src="common/assets/js/ScrollSmoother.min.js"
         strategy="beforeInteractive"
       />
       {/* <Script
-        src="/landing-preview/assets/js/parallax.min.js"
+        src="landing-preview/assets/js/parallax.min.js"
         strategy="beforeInteractive"
       /> */}
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/plugins.js"
+        src="common/assets/js/plugins.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/TweenMax.min.js"
+        src="common/assets/js/TweenMax.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/charming.min.js"
+        src="common/assets/js/charming.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/countdown.js"
+        src="common/assets/js/countdown.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/gsap.min.js"
+        src="common/assets/js/gsap.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/splitting.min.js"
+        src="common/assets/js/splitting.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/mixitup.min.js"
+        src="common/assets/js/mixitup.min.js"
       ></Script>
       {/* <Script
         strategy="beforeInteractive"
-        src="/common/assets/js/imgReveal/imagesloaded.pkgd.min.js"
+        src="common/assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script> */}
       <Script
-        src="/common/assets/js/smoother-script.js"
+        src="common/assets/js/smoother-script.js"
         strategy="lazyOnload"
       />
-      <Script src="/common/assets/js/scripts.js"></Script>
+      <Script src="common/assets/js/scripts.js"></Script>
     </body>
   );
 }

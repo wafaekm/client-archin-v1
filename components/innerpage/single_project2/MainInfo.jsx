@@ -59,7 +59,7 @@ function MainInfo() {
             <div className="col-lg-4">
               <div className="sm-img wow zoomIn slow" data-wow-delay="0.2s">
                 <img
-                  src="/innerpages/assets/img/s_project2/about1.jpg"
+                  src="innerpages/assets/img/s_project2/about1.jpg"
                   alt=""
                   className="img-cover"
                   data-speed="1.5"
@@ -69,7 +69,7 @@ function MainInfo() {
             <div className="col-lg-6 offset-lg-2">
               <div className="lg-img wow zoomIn slow" data-wow-delay="0.4s">
                 <img
-                  src="/innerpages/assets/img/s_project2/about2.jpg"
+                  src="innerpages/assets/img/s_project2/about2.jpg"
                   alt=""
                   className="img-cover"
                   data-speed="1.5"

@@ -36,7 +36,7 @@ function Project({ project, lang = "en" }) {
   const deliverables = isAr ? (project.deliverables_ar || project.deliverables_en) : project.deliverables_en;
 
   const gallery = Array.isArray(project.gallery) ? project.gallery : [];
-  const heroImg = project.img || "/innerpages/assets/img/s_project/m1.jpg";
+  const heroImg = project.img || "innerpages/assets/img/s_project/m1.jpg";
 
   return (
     <section className="tc-project-style1 header" dir={isAr ? "rtl" : "ltr"}>

@@ -4536,7 +4536,7 @@ _convertToUnit = function _convertToUnit(target, property, value, unit) {
       if (cache) {
         cache.svg && target.removeAttribute("transform");
 
-        _parseTransform(target, 1); // force all the cached values back to "normal"/identity, otherwise if there's another tween that's already set to render transforms on this element, it could display the wrong values.
+        _parseTransform(target, 1); // force all the cached values back to "normal"identity, otherwise if there's another tween that's already set to render transforms on this element, it could display the wrong values.
 
 
         cache.uncache = 1;

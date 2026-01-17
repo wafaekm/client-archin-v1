@@ -22,7 +22,7 @@ function Comments() {
                     <div className="d-flex comment-cont">
                       <div className="icon-60 rounded-circle overflow-hidden me-3 flex-shrink-0">
                         <img
-                          src="/innerpages/assets/img/team/team1.jpg"
+                          src="innerpages/assets/img/team/team1.jpg"
                           alt=""
                           className="img-cover"
                         />
@@ -51,7 +51,7 @@ function Comments() {
                     <div className="d-flex comment-replay mt-30 ms-90 border-top pt-40 brd-gray2">
                       <div className="icon-40 rounded-circle overflow-hidden me-3 flex-shrink-0">
                         <img
-                          src="/innerpages/assets/img/team/team2.jpg"
+                          src="innerpages/assets/img/team/team2.jpg"
                           alt=""
                           className="img-cover"
                         />
@@ -85,7 +85,7 @@ function Comments() {
                     <div className="d-flex comment-cont">
                       <div className="icon-60 rounded-circle overflow-hidden me-3 flex-shrink-0">
                         <img
-                          src="/innerpages/assets/img/team/team3.jpg"
+                          src="innerpages/assets/img/team/team3.jpg"
                           alt=""
                           className="img-cover"
                         />

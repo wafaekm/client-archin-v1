@@ -17,7 +17,7 @@ function Team() {
               <a href="tel:+966564788222" className="team-card wow zoomIn">
               <div className="img team-avatar">
                 <img
-                  src="/home1/assets/img/team/team1.png"
+                  src="home1/assets/img/team/team1.png"
                   alt="Eng. Amr Bakry"
                   className="img-cover team-avatar__img"
                 />
@@ -41,7 +41,7 @@ function Team() {
               >
                 <div className="img team-avatar">
                   <img
-                    src="/home1/assets/img/team/team2.png"
+                    src="home1/assets/img/team/team2.png"
                     alt="Eng. Ouiame Aourrad"
                     className="img-cover team-avatar__img team-avatar__img--ouiame"
                   />

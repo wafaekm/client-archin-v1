@@ -1,16 +1,16 @@
 export default function Head() {
     return (
       <>
-        <link rel="stylesheet" href="/common/assets/css/lib/bootstrap.min.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/all.min.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/line-awesome.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/themify-icons.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/animate.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/jquery.fancybox.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/lity.css" />
-        <link rel="stylesheet" href="/common/assets/css/lib/swiper8.min.css" />
-        <link rel="stylesheet" href="/common/assets/css/common_style.css" />
-        <link rel="stylesheet" href="/innerpages/assets/css/innerpages.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/bootstrap.min.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/all.min.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/line-awesome.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/themify-icons.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/animate.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/jquery.fancybox.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/lity.css" />
+        <link rel="stylesheet" href="common/assets/css/lib/swiper8.min.css" />
+        <link rel="stylesheet" href="common/assets/css/common_style.css" />
+        <link rel="stylesheet" href="innerpages/assets/css/innerpages.css" />
   
         <link
           rel="stylesheet"

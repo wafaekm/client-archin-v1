@@ -21,7 +21,7 @@ function Header() {
       <div className="slider-card">
         <div className="img">
           <img
-            src="/home_preview/assets/img/header1.jpg"
+            src="home_preview/assets/img/header1.jpg"
             alt=""
             className="img-cover"
           />

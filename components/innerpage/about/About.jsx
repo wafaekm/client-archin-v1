@@ -26,7 +26,7 @@ function About() {
                 </svg>
               </a>
               <img
-                src="/innerpages/assets/img/leafs.png"
+                src="innerpages/assets/img/leafs.png"
                 alt=""
                 className="icon"
               />

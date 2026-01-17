@@ -32,7 +32,7 @@ function Slider() {
             <SwiperSlide>
               <div className="slider-card">
                 <img
-                  src="/innerpages/assets/img/blog/b1.jpg"
+                  src="innerpages/assets/img/blog/b1.jpg"
                   alt=""
                   className="bg"
                 />
@@ -61,7 +61,7 @@ function Slider() {
             <SwiperSlide>
               <div className="slider-card">
                 <img
-                  src="/innerpages/assets/img/blog/b2.jpg"
+                  src="innerpages/assets/img/blog/b2.jpg"
                   alt=""
                   className="bg"
                 />

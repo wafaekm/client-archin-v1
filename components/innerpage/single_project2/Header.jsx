@@ -17,7 +17,7 @@ function Header() {
         </div>
       </div>
       <img
-        src="/innerpages/assets/img/s_project2/header_bg.jpg"
+        src="innerpages/assets/img/s_project2/header_bg.jpg"
         alt=""
         className="bg img-cover"
         data-speed="1.25"

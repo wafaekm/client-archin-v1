@@ -126,14 +126,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj1.jpg"
+                        src="innerpages/assets/img/projects/proj1.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2023 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -157,14 +157,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj2.jpg"
+                        src="innerpages/assets/img/projects/proj2.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -187,14 +187,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj3.jpg"
+                        src="innerpages/assets/img/projects/proj3.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -218,14 +218,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj4.jpg"
+                        src="innerpages/assets/img/projects/proj4.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -267,14 +267,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj3.jpg"
+                        src="innerpages/assets/img/projects/proj3.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -298,14 +298,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj4.jpg"
+                        src="innerpages/assets/img/projects/proj4.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -329,14 +329,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj1.jpg"
+                        src="innerpages/assets/img/projects/proj1.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2023 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />
@@ -360,14 +360,14 @@ function Projects() {
                   <div className="project-card">
                     <a href="#" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj2.jpg"
+                        src="innerpages/assets/img/projects/proj2.jpg"
                         alt=""
                         className="img-cover"
                       />
                       <div className="year">
                         <span className="txt"> 2022 </span>
                         <img
-                          src="/innerpages/assets/img/project_shape.png"
+                          src="innerpages/assets/img/project_shape.png"
                           alt=""
                           className="bg"
                         />

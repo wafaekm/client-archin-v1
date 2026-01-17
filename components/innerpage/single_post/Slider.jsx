@@ -5,7 +5,7 @@ function Slider() {
     <section className="tc-main-img-style1 header">
       <div className="main-img">
         <img
-          src="/innerpages/assets/img/blog/b1.jpg"
+          src="innerpages/assets/img/blog/b1.jpg"
           alt=""
           className="img-cover"
           data-speed="1.25"

@@ -1,8 +1,8 @@
 export const metadata = {
     title: "Rouh al Almokawala",
     icons: {
-      icon: "/home_preview/assets/img/logo.png",
-      shortcut: "/home_preview/assets/img/logo.png",
+      icon: "home_preview/assets/img/logo.png",
+      shortcut: "home_preview/assets/img/logo.png",
     },
   };
   

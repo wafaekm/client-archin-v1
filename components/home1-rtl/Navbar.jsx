@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x">
       <div className="container-fluid content">
         <a className="navbar-brand" href="#">
-          <img src="/home1/assets/img/logo.png" alt="" className="logo" />
+          <img src="home1/assets/img/logo.png" alt="" className="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -47,11 +47,11 @@ function Navbar() {
             </li>
           </ul>
           <div className="nav-side">
-            <Link href="/" className="icon ms-3">
+            <Link href="" className="icon ms-3">
               <span> EN </span>
             </Link>
 
-            <Link href="/home1-rtl" className="icon ms-3">
+            <Link href="home1-rtl" className="icon ms-3">
               <span> AR </span>
             </Link>
 

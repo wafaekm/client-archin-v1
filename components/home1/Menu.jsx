@@ -28,12 +28,12 @@ function Menu() {
           </div>
         </div>
         <img
-          src="/home1/assets/img/chat_pat2.png"
+          src="home1/assets/img/chat_pat2.png"
           alt=""
           className="side_shape"
         />
         <img
-          src="/home1/assets/img/chat_pat2.png"
+          src="home1/assets/img/chat_pat2.png"
           alt=""
           className="side_shape2"
         />

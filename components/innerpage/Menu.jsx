@@ -47,12 +47,12 @@ function Menu() {
           </div>
         </div>
         <img
-          src="/innerpages/assets/img/chat_pat2.png"
+          src="innerpages/assets/img/chat_pat2.png"
           alt=""
           className="side_shape"
         />
         <img
-          src="/innerpages/assets/img/chat_pat2.png"
+          src="innerpages/assets/img/chat_pat2.png"
           alt=""
           className="side_shape2"
         />

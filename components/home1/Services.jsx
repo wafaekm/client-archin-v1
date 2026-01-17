@@ -22,7 +22,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20"> Civil Construction </h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser1.jpg"
+                      src="home1/assets/img/services/ser1.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -47,7 +47,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20">Electro-Mechanical Works (MEP)</h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser2.jpg"
+                      src="home1/assets/img/services/ser2.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -72,7 +72,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20"> Finishing & Fit-Out </h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser3.jpg"
+                      src="home1/assets/img/services/ser3.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -99,7 +99,7 @@ function Services() {
                   </h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser4.jpg"
+                      src="home1/assets/img/services/ser4.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -128,7 +128,7 @@ function Services() {
         </div>
       </div>
       <div className="ser-img">
-        <img src="/home1/assets/img/services/ser.png" alt="" />
+        <img src="home1/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

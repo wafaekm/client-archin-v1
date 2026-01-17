@@ -111,14 +111,14 @@ function Process() {
 
             <div className="col-lg-5 offset-lg-1">
               <div className="img wow">
-                <img src="/home1/assets/img/process.png" alt="" className="img-cover" />
+                <img src="home1/assets/img/process.png" alt="" className="img-cover" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <img src="/home1/assets/img/c_line2.png" alt="" className="c-line wow" />
+      <img src="home1/assets/img/c_line2.png" alt="" className="c-line wow" />
     </section>
   );
 }

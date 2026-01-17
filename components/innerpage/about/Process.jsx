@@ -139,7 +139,7 @@ function Process() {
               <div className="imgs">
                 <div className="img" data-lag="0.2">
                   <img
-                    src="/innerpages/assets/img/process/proc1.jpg"
+                    src="innerpages/assets/img/process/proc1.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -147,7 +147,7 @@ function Process() {
                 </div>
                 <div className="img" data-lag="0.4">
                   <img
-                    src="/innerpages/assets/img/process/proc2.jpg"
+                    src="innerpages/assets/img/process/proc2.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -155,7 +155,7 @@ function Process() {
                 </div>
                 <div className="img" data-lag="0.3">
                   <img
-                    src="/innerpages/assets/img/process/proc3.jpg"
+                    src="innerpages/assets/img/process/proc3.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -163,7 +163,7 @@ function Process() {
                 </div>
                 <div className="img" data-lag="0.5">
                   <img
-                    src="/innerpages/assets/img/process/proc4.jpg"
+                    src="innerpages/assets/img/process/proc4.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -175,7 +175,7 @@ function Process() {
         </div>
       </div>
       <img
-        src="/innerpages/assets/img/prc_bg.png"
+        src="innerpages/assets/img/prc_bg.png"
         alt=""
         className="bg"
         data-speed="1.2"

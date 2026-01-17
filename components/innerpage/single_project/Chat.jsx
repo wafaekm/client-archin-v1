@@ -51,7 +51,7 @@ function Chat({ lang = "en" }) {
       </div>
 
       <img
-  src="/innerpages/assets/img/c_line4.png"
+  src="innerpages/assets/img/c_line4.png"
   alt=""
   className="c-line wow"
   style={isAr ? { left: 0, right: "auto" } : { right: 0, left: "auto" }}

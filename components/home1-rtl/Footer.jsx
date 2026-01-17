@@ -92,7 +92,7 @@ function Footer() {
 
                 <div className="mt-30">
                   <img
-                    src="/home_preview/assets/img/exp-logo.png"
+                    src="home_preview/assets/img/exp-logo.png"
                     alt="شعار الشركة"
                     style={{ maxWidth: 160, height: "auto", display: "block" }}
                   />
@@ -112,9 +112,9 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0 ar-block">
-                <a href="/home1-rtl">الرئيسية</a>
-                <a href="/home1-rtl/">المشاريع</a>
-                <a href="/home1-rtl/">تواصل</a>
+                <a href="home1-rtl">الرئيسية</a>
+                <a href="home1-rtl/">المشاريع</a>
+                <a href="home1-rtl/">تواصل</a>
               </div>
             </div>
           </div>

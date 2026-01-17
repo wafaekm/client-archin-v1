@@ -8,12 +8,12 @@ function WooCommerce() {
           <div className="col-lg-8">
             <div className="img wow zoomIn slow" data-wow-delay="0.2s">
               <img
-                src="/home_preview/assets/img/woo1.png"
+                src="home_preview/assets/img/woo1.png"
                 alt=""
                 className="main-img img-contain mb-50"
               />
               <img
-                src="/home_preview/assets/img/woo2.png"
+                src="home_preview/assets/img/woo2.png"
                 alt=""
                 className="sub-img img-contain"
                 data-speed="1.2"
@@ -41,7 +41,7 @@ function WooCommerce() {
         </div>
       </div>
       <img
-        src="/home_preview/assets/img/woo_line.png"
+        src="home_preview/assets/img/woo_line.png"
         alt=""
         className="line"
       />

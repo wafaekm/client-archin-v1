@@ -75,7 +75,7 @@ function Testimonials() {
         </div>
       </div>
       <img
-        src="/innerpages/assets/img/c_line3.png"
+        src="innerpages/assets/img/c_line3.png"
         alt=""
         className="c-line wow"
       />

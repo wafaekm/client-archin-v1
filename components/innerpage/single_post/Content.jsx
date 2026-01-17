@@ -112,7 +112,7 @@ function Content() {
               >
                 <div className="img th-450 radius-6 overflow-hidden">
                   <img
-                    src="/innerpages/assets/img/blog/b14.jpg"
+                    src="innerpages/assets/img/blog/b14.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -129,7 +129,7 @@ function Content() {
               >
                 <div className="img th-450 radius-6 overflow-hidden">
                   <img
-                    src="/innerpages/assets/img/blog/b15.jpg"
+                    src="innerpages/assets/img/blog/b15.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -223,7 +223,7 @@ function Content() {
                 <div className="col-lg-2">
                   <div className="img">
                     <img
-                      src="/innerpages/assets/img/team/team3.jpg"
+                      src="innerpages/assets/img/team/team3.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -287,7 +287,7 @@ function Content() {
                         className="img th-280 radius-7 overflow-hidden d-block"
                       >
                         <img
-                          src="/innerpages/assets/img/blog/b3.jpg"
+                          src="innerpages/assets/img/blog/b3.jpg"
                           alt=""
                           className="img-cover"
                         />
@@ -316,7 +316,7 @@ function Content() {
                         className="img th-280 radius-7 overflow-hidden d-block"
                       >
                         <img
-                          src="/innerpages/assets/img/blog/b4.jpg"
+                          src="innerpages/assets/img/blog/b4.jpg"
                           alt=""
                           className="img-cover"
                         />

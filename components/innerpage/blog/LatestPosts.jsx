@@ -64,7 +64,7 @@ function LatestPosts() {
                     className="img radius-7 overflow-hidden th-400 d-block"
                   >
                     <img
-                      src="/innerpages/assets/img/blog/b3.jpg"
+                      src="innerpages/assets/img/blog/b3.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -104,7 +104,7 @@ function LatestPosts() {
                     className="img radius-7 overflow-hidden th-400 d-block"
                   >
                     <img
-                      src="/innerpages/assets/img/blog/b4.jpg"
+                      src="innerpages/assets/img/blog/b4.jpg"
                       alt=""
                       className="img-cover"
                     />

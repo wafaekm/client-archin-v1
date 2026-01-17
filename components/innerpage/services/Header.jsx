@@ -41,7 +41,7 @@ function Header() {
                       </div>
                     </div>
                     <img
-                      src="/innerpages/assets/img/subtract.png"
+                      src="innerpages/assets/img/subtract.png"
                       alt=""
                       className="line"
                     />

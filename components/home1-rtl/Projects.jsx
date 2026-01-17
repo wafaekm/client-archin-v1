@@ -44,7 +44,7 @@ function Projects({ lang = "ar" }) {
                 {list.map((p) => {
                   const title = isAr ? (p.title_ar || p.title_en) : p.title_en;
                   const subTitle = isAr ? (p.subTitle_ar || p.subTitle_en) : p.subTitle_en;
-                  const img = p.img || "/home1/assets/img/projects/proj1.jpg";
+                  const img = p.img || "home1/assets/img/projects/proj1.jpg";
 
                   // tags simples (tu peux remplacer par p.tags si tu en ajoutes)
                   const tag1 = isAr ? "تشطيبات" : "Fit-out";

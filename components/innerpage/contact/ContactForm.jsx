@@ -102,7 +102,7 @@ function ContactForm() {
         </div>
       </div>
       <img
-        src="/innerpages/assets/img/contact_shap.png"
+        src="innerpages/assets/img/contact_shap.png"
         alt=""
         className="shap"
       />

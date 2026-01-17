@@ -5,13 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function Navbar2() {
-  const pathname = usePathname() || "/en";
+  const pathname = usePathname() || "en";
 
   // Switch EN <-> AR en gardant le même chemin
-  const isAr = pathname.startsWith("/ar");
+  const isAr = pathname.startsWith("ar");
   const otherLocalePath = isAr
-    ? pathname.replace(/^\/ar/, "/en")
-    : pathname.replace(/^\/en/, "/ar");
+    ? pathname.replace(/^\/ar/, "en")
+    : pathname.replace(/^\/en/, "ar");
 
   function openSideMenu(e) {
     e?.preventDefault();
@@ -29,8 +29,8 @@ function Navbar2() {
       <nav className="navbar navbar-expand-lg navbar-light tc-navbar-style1 section-padding-x inner-navbar-style1 navbar-light-mode">
       <div className="container-fluid content">
         {/* Logo (même que Home) */}
-        <Link className="navbar-brand" href={isAr ? "/ar" : "/en"}>
-          <img src="/home1/assets/img/logo_black_gold.png" alt="logo" className="logo" />
+        <Link className="navbar-brand" href={isAr ? "ar" : "en"}>
+          <img src="home1/assets/img/logo_black_gold.png" alt="logo" className="logo" />
         </Link>
 
         <button
@@ -49,20 +49,20 @@ function Navbar2() {
           {/* Liens comme Home */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href={isAr ? "/ar" : "/en"}>
+              <Link className="nav-link active" aria-current="page" href={isAr ? "ar" : "en"}>
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
               {/* Ajuste si tu as une vraie page /en/projects sinon laisse vers #projects */}
-              <Link className="nav-link" href={isAr ? "/ar#projects" : "/en#projects"}>
+              <Link className="nav-link" href={isAr ? "ar#projects" : "en#projects"}>
                 Projects
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href={isAr ? "/ar#contact" : "/en#contact"}>
+              <Link className="nav-link" href={isAr ? "ar#contact" : "en#contact"}>
                 Contact
               </Link>
             </li>

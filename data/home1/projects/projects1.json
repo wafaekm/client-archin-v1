@@ -49,14 +49,14 @@
     "مساحات عمل مصممة خصيصاً لتلبية احتياجات العميل",
     "تنفيذ المشروع بنظام تسليم مفتاح مع مسؤولية كاملة من جهة واحدة"
   ],
-  "img": "/home1/assets/img/projects/proj1.jpg",
+  "img": "home1/assets/img/projects/proj1.jpg",
   "gallery": [
-    "/innerpages/assets/img/s_project/s_img1.png",
-    "/innerpages/assets/img/s_project/s_img2.png",
-    "/innerpages/assets/img/s_project/d1.jpg",
-    "/innerpages/assets/img/s_project/d2.png",
-    "/innerpages/assets/img/s_project/s1.png",
-    "/innerpages/assets/img/s_project/s2.png"
+    "innerpages/assets/img/s_project/s_img1.png",
+    "innerpages/assets/img/s_project/s_img2.png",
+    "innerpages/assets/img/s_project/d1.jpg",
+    "innerpages/assets/img/s_project/d2.png",
+    "innerpages/assets/img/s_project/s1.png",
+    "innerpages/assets/img/s_project/s2.png"
   ]
 },
 
@@ -114,10 +114,10 @@
     "توحيد جودة التنفيذ عبر جميع الفروع",
     "تسليم المشروع بنظام تسليم مفتاح مع مسؤولية كاملة من جهة واحدة"
   ],
-  "img": "/innerpages/assets/img/s_project/popeyes_1.png",
+  "img": "innerpages/assets/img/s_project/popeyes_1.png",
   "gallery": [
-    "/innerpages/assets/img/s_project/popeyes_1.png",
-    "/innerpages/assets/img/s_project/popeyes_2.png"
+    "innerpages/assets/img/s_project/popeyes_1.png",
+    "innerpages/assets/img/s_project/popeyes_2.png"
   ]
 },
 
@@ -173,10 +173,10 @@
     "تنفيذ متعدد الفروع بكفاءة وتسليم ضمن الجداول الزمنية",
     "تسليم مفتاح بمسؤولية موحدة من جهة واحدة"
   ],
-  "img": "/innerpages/assets/img/s_project/huleil0.jpg",
+  "img": "innerpages/assets/img/s_project/huleil0.jpg",
   "gallery": [
-    "/innerpages/assets/img/s_project/huleil1.jpg",
-    "/innerpages/assets/img/s_project/huleil2.png"
+    "innerpages/assets/img/s_project/huleil1.jpg",
+    "innerpages/assets/img/s_project/huleil2.png"
   ]
 },
 
@@ -222,12 +222,12 @@
     "تشطيبات داخلية عالية الجودة وتفاصيل دقيقة",
     "اتساق في التنفيذ بين الطابقين"
   ],
-  "img": "/innerpages/assets/img/s_project/canvas_1.jpg",
+  "img": "innerpages/assets/img/s_project/canvas_1.jpg",
   "gallery": [
-    "/innerpages/assets/img/s_project/canvas_1.jpg",
-    "/innerpages/assets/img/s_project/canvas_2.jpg",
-    "/innerpages/assets/img/s_project/canvas_3.jpg",
-    "/innerpages/assets/img/s_project/canvas_4.jpg"
+    "innerpages/assets/img/s_project/canvas_1.jpg",
+    "innerpages/assets/img/s_project/canvas_2.jpg",
+    "innerpages/assets/img/s_project/canvas_3.jpg",
+    "innerpages/assets/img/s_project/canvas_4.jpg"
   ]
 }
 

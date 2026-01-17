@@ -89,12 +89,12 @@ function Challenge() {
             <SwiperSlide>
               <div className="case-card">
                 <a
-                  href="/innerpages/assets/img/s_project2/ch1.jpg"
+                  href="innerpages/assets/img/s_project2/ch1.jpg"
                   className="img"
                   data-fancybox="cases"
                 >
                   <img
-                    src="/innerpages/assets/img/s_project2/ch1.jpg"
+                    src="innerpages/assets/img/s_project2/ch1.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -104,12 +104,12 @@ function Challenge() {
             <SwiperSlide>
               <div className="case-card">
                 <a
-                  href="/innerpages/assets/img/s_project2/ch2.jpg"
+                  href="innerpages/assets/img/s_project2/ch2.jpg"
                   className="img"
                   data-fancybox="cases"
                 >
                   <img
-                    src="/innerpages/assets/img/s_project2/ch2.jpg"
+                    src="innerpages/assets/img/s_project2/ch2.jpg"
                     alt=""
                     className="img-cover"
                   />
@@ -119,12 +119,12 @@ function Challenge() {
             <SwiperSlide>
               <div className="case-card">
                 <a
-                  href="/innerpages/assets/img/s_project2/ch3.jpg"
+                  href="innerpages/assets/img/s_project2/ch3.jpg"
                   className="img"
                   data-fancybox="cases"
                 >
                   <img
-                    src="/innerpages/assets/img/s_project2/ch3.jpg"
+                    src="innerpages/assets/img/s_project2/ch3.jpg"
                     alt=""
                     className="img-cover"
                   />

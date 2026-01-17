@@ -25,7 +25,7 @@ function Services() {
 
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser1.jpg"
+                      src="home1/assets/img/services/ser1.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -55,7 +55,7 @@ function Services() {
 
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser2.jpg"
+                      src="home1/assets/img/services/ser2.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -85,7 +85,7 @@ function Services() {
 
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser3.jpg"
+                      src="home1/assets/img/services/ser3.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -115,7 +115,7 @@ function Services() {
 
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser4.jpg"
+                      src="home1/assets/img/services/ser4.jpg"
                       alt=""
                       className="img-cover"
                     />
@@ -148,7 +148,7 @@ function Services() {
       </div>
 
       <div className="ser-img">
-        <img src="/home1/assets/img/services/ser.png" alt="" />
+        <img src="home1/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

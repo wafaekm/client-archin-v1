@@ -21,7 +21,7 @@ function Experience() {
           <div className="col-lg-3">
             <div className="img wow">
               <img
-                src="/home1/assets/img/exp.png"
+                src="home1/assets/img/exp.png"
                 alt="Rouh Al Almokawala"
                 className="img-cover"
               />
@@ -67,7 +67,7 @@ function Experience() {
         </div>
       </div>
 
-      <img src="/home1/assets/img/c_line.png" alt="" className="c-line wow" />
+      <img src="home1/assets/img/c_line.png" alt="" className="c-line wow" />
     </section>
   );
 }

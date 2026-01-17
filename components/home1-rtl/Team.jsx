@@ -15,7 +15,7 @@ function Team() {
               <a href="tel:+966564788222" className="team-card wow zoomIn">
                 <div className="img">
                   <img
-                    src="/home1/assets/img/team/team1.png"
+                    src="home1/assets/img/team/team1.png"
                     alt="م. عمرو بكري"
                     className="img-cover"
                   />
@@ -37,7 +37,7 @@ function Team() {
               >
                 <div className="img">
                   <img
-                    src="/home1/assets/img/team/team2.png"
+                    src="home1/assets/img/team/team2.png"
                     alt="م. ويام أورّاد"
                     className="img-cover"
                   />

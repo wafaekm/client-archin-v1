@@ -85,13 +85,13 @@ function Footer() {
                   <h5 className="mb-20 mt-5 fw-600">Services</h5>
                   <ul className="footer-links">
                     <li>
-                      <a href="/en/services">Design &amp; Build / Turnkey</a>
+                      <a href="en/services">Design &amp; Build / Turnkey</a>
                     </li>
                     <li>
-                      <a href="/en/services">MEP / HVAC / Fire Systems</a>
+                      <a href="en/services">MEP / HVAC / Fire Systems</a>
                     </li>
                     <li>
-                      <a href="/en/services">
+                      <a href="en/services">
                         Interior Fit-out &amp; Finishes
                       </a>
                     </li>
@@ -100,7 +100,7 @@ function Footer() {
                   {/* Logo dans la même colonne, aligné à droite */}
                   <div className="footer-logo-wrap mt-30">
                     <img
-                      src="/home_preview/assets/img/exp-logo.png"
+                      src="home_preview/assets/img/exp-logo.png"
                       alt="Company Logo"
                       className="footer-logo"
                     />
@@ -123,9 +123,9 @@ function Footer() {
               </div>
               <div className="col-lg-6">
                 <div className="foot-links mt-4 mt-lg-0 justify-content-lg-end">
-                  <a href="/en">Home</a>
-                  <a href="/en/projects">Projects</a>
-                  <a href="/en/contact">Contact</a>
+                  <a href="en">Home</a>
+                  <a href="en/projects">Projects</a>
+                  <a href="en/contact">Contact</a>
                 </div>
               </div>
             </div>

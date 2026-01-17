@@ -14,7 +14,7 @@ function Navbar() {
       <div className="container-fluid content">
         <a className="navbar-brand" href="#">
           <img
-            src="/home_preview/assets/img/logo.png"
+            src="home_preview/assets/img/logo.png"
             alt=""
             className="logo"
           />

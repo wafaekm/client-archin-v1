@@ -43,14 +43,14 @@ function Testimonials({ lang = "en" }) {
             "ننفّذ مشاريع تسليم مفتاح عبر تخطيط منضبط وتنسيق قوي وإشراف ميداني مباشر، لضمان جودة ثابتة وجدول زمني واضح.",
           name: "م. وئام أوراد",
           role: "مهندسة مشروع",
-          img: "/innerpages/assets/img/team/team1.png",
+          img: "innerpages/assets/img/team/team1.png",
         },
         {
           text:
             "السلامة والالتزام جزء أساسي من طريقة عملنا. نطبّق معايير HSE، ونتابع التقدم بتقارير واضحة، مع تنسيق كامل بين جميع الأطراف لضمان تسليم سلس.",
           name: "م.عمر البكري",
           role: "مهندس موقع",
-          img: "/innerpages/assets/img/team/team2.png",
+          img: "innerpages/assets/img/team/team2.png",
         },
       ]
     : [
@@ -59,14 +59,14 @@ function Testimonials({ lang = "en" }) {
             "We deliver turnkey projects with disciplined planning, strong coordination, and on-site control—ensuring consistent quality and predictable timelines.",
           name: "Engineer Ouiame",
           role: "Project Engineer",
-          img: "/innerpages/assets/img/team/team1.png",
+          img: "innerpages/assets/img/team/team1.png",
         },
         {
           text:
             "Safety and compliance are embedded in our workflow. We apply HSE standards, track progress clearly, and coordinate stakeholders to ensure smooth delivery.",
           name: "Engineer Amr",
           role: "Site Engineer",
-          img: "/innerpages/assets/img/team/team2.png",
+          img: "innerpages/assets/img/team/team2.png",
         },
       ];
 
@@ -142,7 +142,7 @@ function Testimonials({ lang = "en" }) {
         </Swiper>
       </div>
 
-      <img src="/innerpages/assets/img/c_line3.png" alt="" className="c-line" />
+      <img src="innerpages/assets/img/c_line3.png" alt="" className="c-line" />
     </section>
   );
 }

@@ -110,7 +110,7 @@ export default function Commitments({ lang = "en" }) {
         </div>
       </div>
 
-      <img src="/innerpages/assets/img/c_line3.png" alt="" className="c-line wow" />
+      <img src="innerpages/assets/img/c_line3.png" alt="" className="c-line wow" />
     </section>
   );
 }

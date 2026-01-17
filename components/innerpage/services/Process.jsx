@@ -113,7 +113,7 @@ function Process() {
             <div className="col-lg-4 offset-lg-2">
               <div className="img wow">
                 <img
-                  src="/innerpages/assets/img/process.jpg"
+                  src="innerpages/assets/img/process.jpg"
                   alt=""
                   className="img-cover"
                 />
@@ -123,7 +123,7 @@ function Process() {
         </div>
       </div>
       <img
-        src="/innerpages/assets/img/c_line2.png"
+        src="innerpages/assets/img/c_line2.png"
         alt=""
         className="c-line wow"
       />

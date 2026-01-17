@@ -112,7 +112,7 @@ function Process() {
   style={{ paddingInlineStart: 80 }}
 >
   <div className="img wow">
-    <img src="/home1/assets/img/ar_imgs/process.png" alt="" className="img-cover" />
+    <img src="home1/assets/img/ar_imgs/process.png" alt="" className="img-cover" />
   </div>
 </div>
 
@@ -121,7 +121,7 @@ function Process() {
         </div>
       </div>
 
-      <img src="/home1/assets/img/c_line.png" alt="" className="c-line wow" />
+      <img src="home1/assets/img/c_line.png" alt="" className="c-line wow" />
     </section>
   );
 }

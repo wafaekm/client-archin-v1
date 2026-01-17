@@ -139,7 +139,7 @@
 
     function imageHandler(target, instance) {
         var desc = (instance.opener() && instance.opener().data('lity-desc')) || 'Image with no description';
-        var img = $('<img src="' + target + '" alt="' + desc + '"/>');
+        var img = $('<img src="' + target + '" alt="' + desc + '">');
         var deferred = _deferred();
         var failed = function() {
             deferred.reject(error('Failed loading image'));
@@ -293,7 +293,7 @@
     }
 
     function iframeHandler(target) {
-        return '<div class="lity-iframe-container"><iframe frameborder="0" allowfullscreen allow="autoplay; fullscreen" src="' + target + '"/></div>';
+        return '<div class="lity-iframe-container"><iframe frameborder="0" allowfullscreen allow="autoplay; fullscreen" src="' + target + '"></div>';
     }
 
     function winHeight() {

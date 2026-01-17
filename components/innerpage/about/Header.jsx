@@ -6,7 +6,7 @@ function Header() {
       <div className="slider-card">
         <div className="img">
           <img
-            src="/innerpages/assets/img/about/header1.jpg"
+            src="innerpages/assets/img/about/header1.jpg"
             alt=""
             className="img-cover"
           />
