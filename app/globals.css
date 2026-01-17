@@ -1,14 +1,15 @@
-/* EN (défaut) */
-body.home-style1 h1.js-title{
-  font-size: 56px !important;
+/* EN: fixe le titre du slider */
+.tc-header-style1 h1.js-title{
+  font-size: 65px !important;
   line-height: 1.05 !important;
 }
 
-/* AR (RTL) : si tu mets dir="rtl" sur <main> */
-body.home-style1 main[dir="rtl"] h1.js-title{
+/* AR: si la page est en RTL */
+html[dir="rtl"] .tc-header-style1 h1.js-title{
   font-size: 56px !important;
   line-height: 1.10 !important;
 }
+
 
   
   /* Taille du bouton */
