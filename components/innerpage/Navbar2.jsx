@@ -5,32 +5,30 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function Navbar2() {
-  const pathname = usePathname() || "en";
+  const pathname = usePathname() || "/en";
 
-  // Switch EN <-> AR en gardant le même chemin
-  const isAr = pathname.startsWith("ar");
+  // Attention: pathname commence par "/"
+  const isAr = pathname.startsWith("/ar");
+
+  // Switch EN <-> AR en gardant le même chemin (avec slash)
   const otherLocalePath = isAr
-    ? pathname.replace(/^\/ar/, "en")
-    : pathname.replace(/^\/en/, "ar");
+    ? pathname.replace(/^\/ar/, "/en")
+    : pathname.replace(/^\/en/, "/ar");
 
-  function openSideMenu(e) {
-    e?.preventDefault();
-
-    const sideMenu = document.querySelector(".side_menu4_overlay");
-    const sideMenu2 = document.querySelector(".side_menu4_overlay2");
-    const sideMenu4 = document.querySelector(".side_menu_style4");
-
-    sideMenu2?.classList.add("show");
-    sideMenu?.classList.add("show");
-    sideMenu4?.classList.add("show");
-  }
+  // Si jamais on est sur une route sans /en ou /ar, on force une cible propre
+  const safeEn = pathname.startsWith("/en") ? pathname : "/en";
+  const safeAr = pathname.startsWith("/ar") ? pathname : "/ar";
 
   return (
-      <nav className="navbar navbar-expand-lg navbar-light tc-navbar-style1 section-padding-x inner-navbar-style1 navbar-light-mode">
+    <nav className="navbar navbar-expand-lg navbar-light tc-navbar-style1 section-padding-x inner-navbar-style1 navbar-light-mode">
       <div className="container-fluid content">
-        {/* Logo (même que Home) */}
-        <Link className="navbar-brand" href={isAr ? "ar" : "en"}>
-          <img src="home1/assets/img/logo_black_gold.png" alt="logo" className="logo" />
+        {/* Logo : routes ABSOLUES */}
+        <Link className="navbar-brand" href={isAr ? "/ar" : "/en"}>
+          <img
+            src="home1/assets/img/logo_black_gold.png"
+            alt="logo"
+            className="logo"
+          />
         </Link>
 
         <button
@@ -46,53 +44,46 @@ function Navbar2() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          {/* Liens comme Home */}
+          {/* Liens ABSOLUS */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href={isAr ? "ar" : "en"}>
+              <Link className="nav-link active" aria-current="page" href={isAr ? "/ar" : "/en"}>
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
-              {/* Ajuste si tu as une vraie page /en/projects sinon laisse vers #projects */}
-              <Link className="nav-link" href={isAr ? "ar#projects" : "en#projects"}>
+              <Link className="nav-link" href={isAr ? "/ar#projects" : "/en#projects"}>
                 Projects
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href={isAr ? "ar#contact" : "en#contact"}>
+              <Link className="nav-link" href={isAr ? "/ar#contact" : "/en#contact"}>
                 Contact
               </Link>
             </li>
           </ul>
 
-          {/* Partie droite comme Home */}
           <div className="nav-side">
-            <Link href={isAr ? otherLocalePath : pathname} className="icon ms-3">
+            {/* Switch locale : on envoie VRAIMENT vers l'autre locale */}
+            <Link href={isAr ? otherLocalePath : safeEn} className="icon ms-3">
               <span> EN </span>
             </Link>
 
-            <Link href={isAr ? pathname : otherLocalePath} className="icon ms-3">
+            <Link href={isAr ? safeAr : otherLocalePath} className="icon ms-3">
               <span> AR </span>
             </Link>
 
-            <a href="#" className="icon ms-5 fsz-21 search_btn" onClick={(e) => e.preventDefault()}>
+            <a
+              href="#"
+              className="icon ms-5 fsz-21 search_btn"
+              onClick={(e) => e.preventDefault()}
+            >
               <span>
                 <i className="la la-search"></i>
               </span>
             </a>
-
-            {/* <a
-              href="#"
-              onClick={openSideMenu}
-              className="icon ms-3 side_menu_btn fsz-21 d-none d-lg-inline-block"
-            >
-              <span>
-                <i className="la la-grip-lines"></i>
-              </span>
-            </a> */}
           </div>
         </div>
       </div>

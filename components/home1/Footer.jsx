@@ -123,9 +123,9 @@ function Footer() {
               </div>
               <div className="col-lg-6">
                 <div className="foot-links mt-4 mt-lg-0 justify-content-lg-end">
-                  <a href="en">Home</a>
-                  <a href="en/projects">Projects</a>
-                  <a href="en/contact">Contact</a>
+                  <a href="/en">Home</a>
+                  <a href="/en/projects">Projects</a>
+                  <a href="/en/contact">Contact</a>
                 </div>
               </div>
             </div>
