@@ -5,6 +5,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
+        {/* IMPORTANT: base pour corriger les chemins relatifs sur GitHub Pages */}
+        <base href={`${BASE_PATH}/`} />
+
         {/* CSS locaux (GitHub Pages) */}
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/bootstrap.min.css`} />
         <link rel="stylesheet" href={`${BASE_PATH}/common/assets/css/lib/all.min.css`} />
