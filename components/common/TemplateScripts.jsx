@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import BASE_PATH from "@/common/basePath";
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -18,16 +19,18 @@ export default function TemplateScripts() {
   useEffect(() => {
     (async () => {
       try {
-        await loadScript("common/assets/js/gsap.min.js");
-        // await loadScript("common/assets/js/ScrollTrigger.min.js");
-        // await loadScript("common/assets/js/ScrollSmoother.min.js");
-        await loadScript("common/assets/js/TweenMax.min.js");
-        await loadScript("common/assets/js/charming.min.js");
-        await loadScript("common/assets/js/splitting.min.js");
-        await loadScript("common/assets/js/isotope.pkgd.min.js");
-        await loadScript("common/assets/js/plugins.js");
-        // await loadScript("common/assets/js/smoother-script.js");
-        await loadScript("common/assets/js/scripts.js");
+        await loadScript(`${BASE_PATH}/common/assets/js/gsap.min.js`);
+        // await loadScript(`${BASE_PATH}/common/assets/js/ScrollTrigger.min.js`);
+        // await loadScript(`${BASE_PATH}/common/assets/js/ScrollSmoother.min.js`);
+
+        await loadScript(`${BASE_PATH}/common/assets/js/TweenMax.min.js`);
+        await loadScript(`${BASE_PATH}/common/assets/js/charming.min.js`);
+        await loadScript(`${BASE_PATH}/common/assets/js/splitting.min.js`);
+        await loadScript(`${BASE_PATH}/common/assets/js/isotope.pkgd.min.js`);
+        await loadScript(`${BASE_PATH}/common/assets/js/plugins.js`);
+
+        // await loadScript(`${BASE_PATH}/common/assets/js/smoother-script.js`);
+        await loadScript(`${BASE_PATH}/common/assets/js/scripts.js`);
       } catch (e) {
         console.error("Failed loading template scripts:", e);
       }

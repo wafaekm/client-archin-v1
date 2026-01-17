@@ -79,6 +79,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /client-archin-v1
+
 
   # Deployment job
   deploy:
