@@ -18,8 +18,8 @@ import Contact from "@/components/innerpage/single_project2/Contact";
 export const metadata = {
   title: "archin",
   icons: {
-    icon: `${BASE_PATH}/home_preview/assets/img/fav.png`,
-    shortcut: `${BASE_PATH}/home_preview/assets/img/fav.png`,
+    icon: `${BASE_PATH}/home_preview/assets/img/logo.png`,
+    shortcut: `${BASE_PATH}/home_preview/assets/img/logo.png`,
     other: generateStylesheetObject([
       `${BASE_PATH}/common/assets/css/lib/bootstrap.min.css`,
       `${BASE_PATH}/common/assets/css/lib/all.min.css`,
