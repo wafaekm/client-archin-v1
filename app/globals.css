@@ -1,14 +1,15 @@
-/* EN (défaut) : cible très spécifique */
-body.home-style1 h1.js-title {
-    font-size: 72px !important;
-    line-height: 1.05 !important;
-  }
-  
-  /* AR (RTL) : plus petit */
-  html[dir="rtl"] body.home-style1 h1.js-title {
-    font-size: 56px !important; /* essaie 52 ou 48 si besoin */
-    line-height: 1.10 !important;
-  }
+/* EN (défaut) */
+body.home-style1 h1.js-title{
+  font-size: 72px !important;
+  line-height: 1.05 !important;
+}
+
+/* AR (RTL) : si tu mets dir="rtl" sur <main> */
+body.home-style1 main[dir="rtl"] h1.js-title{
+  font-size: 56px !important;
+  line-height: 1.10 !important;
+}
+
   
   /* Taille du bouton */
 .butn.hover-orange {
