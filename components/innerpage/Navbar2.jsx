@@ -5,25 +5,45 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function Navbar2() {
-  const pathname = usePathname() || "/en";
+  const pathname = usePathname() || "/";
 
-  // Attention: pathname commence par "/"
-  const isAr = pathname.startsWith("/ar");
+  // AR si on est sur /home1-rtl... (et tu peux garder /ar si tu veux)
+  const isAr = pathname.startsWith("/home1-rtl") || pathname.startsWith("/ar");
 
-  // Switch EN <-> AR en gardant le même chemin (avec slash)
-  const otherLocalePath = isAr
-    ? pathname.replace(/^\/ar/, "/en")
-    : pathname.replace(/^\/en/, "/ar");
+  // Home routes réelles chez toi
+  const homePath = isAr ? "/home1-rtl/" : "/";
 
-  // Si jamais on est sur une route sans /en ou /ar, on force une cible propre
-  const safeEn = pathname.startsWith("/en") ? pathname : "/en";
-  const safeAr = pathname.startsWith("/ar") ? pathname : "/ar";
+  // Labels
+  const t = isAr
+    ? { home: "الرئيسية", projects: "المشاريع", contact: "تواصل معنا" }
+    : { home: "Home", projects: "Projects", contact: "Contact" };
+
+  // Scroll helper
+  const scrollToId = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const yOffset = 130; // mets la même valeur que ton offset mobile si besoin
+    const y = el.getBoundingClientRect().top + window.scrollY - yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
+  const onNavClick = (id) => (e) => {
+    e.preventDefault();
+    scrollToId(id);
+  };
+
+  const toEnglish = () => "/";
+  const toArabic = () => "/home1-rtl/";
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light tc-navbar-style1 section-padding-x inner-navbar-style1 navbar-light-mode">
+    <nav
+      className="navbar navbar-expand-lg navbar-light tc-navbar-style1 section-padding-x inner-navbar-style1 navbar-light-mode"
+      dir={isAr ? "rtl" : "ltr"}
+    >
       <div className="container-fluid content">
-        {/* Logo : routes ABSOLUES */}
-        <Link className="navbar-brand" href={isAr ? "/ar" : "/en"}>
+        {/* Logo => Home réelle */}
+        <Link className="navbar-brand" href={homePath}>
           <img
             src="home1/assets/img/logo_black_gold.png"
             alt="logo"
@@ -44,34 +64,33 @@ function Navbar2() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          {/* Liens ABSOLUS */}
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          {/* Projects & Contact = scroll ONLY */}
+          <ul className={`navbar-nav ${isAr ? "ms-auto" : "me-auto"} mb-2 mb-lg-0`}>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href={isAr ? "/ar" : "/en"}>
-                Home
+              <Link className="nav-link active" aria-current="page" href={homePath}>
+                {t.home}
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href={isAr ? "/ar#projects" : "/en#projects"}>
-                Projects
-              </Link>
+              <a className="nav-link" href="#related-projects" onClick={onNavClick("related-projects")}>
+                {t.projects}
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href={isAr ? "/ar#contact" : "/en#contact"}>
-                Contact
-              </Link>
+              <a className="nav-link" href="#chat" onClick={onNavClick("chat")}>
+                {t.contact}
+              </a>
             </li>
           </ul>
 
           <div className="nav-side">
-            {/* Switch locale : on envoie VRAIMENT vers l'autre locale */}
-            <Link href={isAr ? otherLocalePath : safeEn} className="icon ms-3">
+            <Link href={toEnglish()} className="icon ms-3">
               <span> EN </span>
             </Link>
 
-            <Link href={isAr ? safeAr : otherLocalePath} className="icon ms-3">
+            <Link href={toArabic()} className="icon ms-3">
               <span> AR </span>
             </Link>
 

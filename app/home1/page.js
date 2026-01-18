@@ -14,6 +14,7 @@ import Team from "@/components/home1/Team";
 import Footer from "@/components/home1/Footer";
 import TemplateScripts from "@/components/common/TemplateScripts";
 import Milestones from "@/components/home1/Milestones";
+import Chat from "@/components/home1/Chat";
 
 export const metadata = {
   title: "روح المقاولة",
@@ -57,6 +58,7 @@ export default function Home() {
               <Testimonials />
               <Milestones />
               <Team />
+              <Chat />
             </main>
 
             <Footer />

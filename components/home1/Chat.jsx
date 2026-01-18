@@ -1,31 +1,51 @@
+"use client";
 import React from "react";
 
-function Chat() {
+export default function Chat() {
   return (
-    <section className="tc-chat-style1">
+    <section id="chat" className="tc-chat-style1" dir="ltr">
       <div className="container">
         <div className="content">
-          <a
-            href="mailto:info@rohalmokawlah.com"
-            className="xl-text"
-            style={{ fontSize: 34, lineHeight: 1.2 }}  // réduit la taille
-          >
+          <a href="mailto:info@rohalmokawlah.com" className="xl-text js-splittext-lines">
             info@rohalmokawlah.com
           </a>
 
-          <h5 className="mb-50 lh-5">
-            Let’s discuss your next project <br /> and deliver it turnkey.
+          <h5 className="mb-30 lh-5" style={{ whiteSpace: "pre-line" }}>
+            Ready to discuss your project?
+            {"\n"}We reply within 24 hours.
           </h5>
 
-          <div className="text">
-            Or call: <a href="tel:+966541319776">+966 54 131 9776</a>
+          <div className="d-flex flex-wrap align-items-center gap-3">
+            <a
+              href="tel:+966541319776"
+              className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
+            >
+              <span>
+                Call Us <i className="fal fa-phone ms-2"></i>
+              </span>
+            </a>
+
+            <a
+              href="https://wa.me/966541319776"
+              target="_blank"
+              rel="noreferrer"
+              className="butn border rounded-pill"
+              style={{ borderColor: "#ccc", color: "#000" }}
+            >
+              <span>
+                WhatsApp <i className="fab fa-whatsapp ms-2"></i>
+              </span>
+            </a>
           </div>
         </div>
       </div>
 
-      <img src="home1/assets/img/c_line4.png" alt="" className="c-line wow" />
+      <img
+        src="home1/assets/img/c_line4.png"
+        alt=""
+        className="c-line wow"
+        style={{ right: 0, left: "auto" }}
+      />
     </section>
   );
 }
-
-export default Chat;

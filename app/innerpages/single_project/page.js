@@ -35,26 +35,29 @@ export const metadata = {
   },
 };
 
-export default function SingleProjectPage() {
+export default function SingleProjectPage({ params }) {
+  const lang = params?.lang || "en";
+  const slug = params?.slug; // utile pour RelatedProjects (exclure le projet courant) + fetch du project
+
   return (
     <>
       <BodyClass className="inner-pages-style1 s-project-pg-style1" />
 
       <Loader />
-      <Menu />
+      <Menu lang={lang} />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <Navbar2 />
+          <Navbar2 lang={lang} />
 
           <main>
-            <Project />
-            <Testimonials />
-            <RelatedProjects />
-            <Chat />
+            <Project lang={lang} slug={slug} />
+            <Testimonials lang={lang} slug={slug} />
+            <RelatedProjects lang={lang} currentSlug={slug} />
+            <Chat lang={lang} slug={slug} />
           </main>
 
-          <Footer />
+          <Footer lang={lang} />
         </div>
       </div>
 

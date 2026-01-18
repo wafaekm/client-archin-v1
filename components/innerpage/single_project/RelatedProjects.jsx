@@ -6,7 +6,23 @@ import Link from "next/link";
 
 import projects from "@/data/home1/projects/projects1.json";
 
+const CONTENT = {
+  en: {
+    heading: "More Projects",
+    cta: "View All Projects",
+    tags: ["Turnkey", "MEP"],
+  },
+  ar: {
+    heading: "المزيد من المشاريع",
+    cta: "عرض كل المشاريع",
+    tags: ["تسليم مفتاح", "ميكانيكا وكهرباء وصحي"],
+  },
+};
+
 function RelatedProjects({ lang = "en", currentSlug }) {
+  const isAr = lang === "ar";
+  const t = isAr ? CONTENT.ar : CONTENT.en;
+
   const swiperOptions = {
     modules: [Keyboard],
     spaceBetween: 30,
@@ -21,23 +37,33 @@ function RelatedProjects({ lang = "en", currentSlug }) {
     },
   };
 
-  const items = (Array.isArray(projects) ? projects : []).slice(0, 6);
+  // sécurité + limite + (optionnel) exclure le projet actuel si currentSlug est fourni
+  const safeProjects = Array.isArray(projects) ? projects : [];
+  const filtered = currentSlug
+    ? safeProjects.filter((p) => p?.slug && p.slug !== currentSlug)
+    : safeProjects;
 
+  const items = filtered.slice(0, 6);
 
   return (
-    <section className="tc-related-projects-style1">
+      <section
+        id="related-projects"
+        className="tc-related-projects-style1"
+        dir={isAr ? "rtl" : "ltr"}
+      >
       <div className="container">
         <div className="row align-items-center wow fadeInUp slow" data-wow-delay="0.2s">
           <div className="col-lg-9">
-            <h3 className="fsz-45 text-capitalize">More Projects</h3>
+            <h3 className="fsz-45 text-capitalize">{t.heading}</h3>
           </div>
+
           <div className="col-lg-3 text-lg-end mt-4 mt-lg-0">
             <Link
               href={`/${lang}/projects`}
               className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
             >
               <span>
-                View All Projects <i className="fal fa-arrow-up-right ms-2"></i>
+                {t.cta} <i className="fal fa-arrow-up-right ms-2"></i>
               </span>
             </Link>
           </div>
@@ -50,21 +76,23 @@ function RelatedProjects({ lang = "en", currentSlug }) {
             <div className="cases-slider">
               <Swiper {...swiperOptions}>
                 {items.map((item, i) => {
-                  const title = lang === "ar" ? (item.title_ar || item.title_en) : item.title_en;
-                  const overview = lang === "ar" ? (item.overview_ar || item.overview_en) : item.overview_en;
+                  const title = isAr ? (item.title_ar || item.title_en) : item.title_en;
+                  const overview = isAr ? (item.overview_ar || item.overview_en) : item.overview_en;
 
                   return (
                     <SwiperSlide key={item.slug || i}>
                       <div className="case-card">
                         <Link href={`/${lang}/projects/${item.slug}`} className="img">
-                          <img src={item.img} alt={title} className="img-cover" />
+                          <img src={item.img} alt={title || ""} className="img-cover" />
                         </Link>
 
                         <div className="info">
-                          {/* tags simples (tu peux les laisser fixes) */}
                           <div className="tags mb-30">
-                            <a href="#" onClick={(e) => e.preventDefault()}>Turnkey</a>
-                            <a href="#" onClick={(e) => e.preventDefault()}>MEP</a>
+                            {t.tags.map((tag, idx) => (
+                              <a key={idx} href="#" onClick={(e) => e.preventDefault()}>
+                                {tag}
+                              </a>
+                            ))}
                           </div>
 
                           <h3 className="title fsz-35 mb-20">

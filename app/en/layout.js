@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Rouh al Almokawala",
+    title: "Rouh al Almokawlah",
     icons: {
       icon: "home_preview/assets/img/logo.png",
       shortcut: "home_preview/assets/img/logo.png",

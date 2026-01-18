@@ -57,7 +57,7 @@ export default function ProjectPage({ params }) {
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <Navbar2 />
+         <Navbar2 lang="ar" />
 
           <main dir="rtl">
             <Project project={project} lang="ar" />
@@ -66,7 +66,7 @@ export default function ProjectPage({ params }) {
             <Chat lang="ar" />
           </main>
 
-          <Footer />
+          <Footer lang="ar" />
         </div>
       </div>
 

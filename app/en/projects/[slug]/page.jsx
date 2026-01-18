@@ -62,14 +62,14 @@ export default function ProjectPage({ params }) {
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <Navbar2 />
+         <Navbar2 lang="en" />
           <main>
             <Project project={project} lang="en" />
-            <Commitments />
+            <Commitments lang="en" />
             <RelatedProjects lang="en" currentSlug={project.slug} />
             <Chat lang="en" />
           </main>
-          <Footer />
+          <Footer lang="en" />
         </div>
       </div>
 

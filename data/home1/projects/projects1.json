@@ -56,7 +56,11 @@
     "innerpages/assets/img/s_project/d1.jpg",
     "innerpages/assets/img/s_project/d2.png",
     "innerpages/assets/img/s_project/s1.png",
-    "innerpages/assets/img/s_project/s2.png"
+    "innerpages/assets/img/s_project/s2.png",
+    "innerpages/assets/img/s_project/f3.png",
+    "innerpages/assets/img/s_project/f4.jpg"
+
+
   ]
 },
 
@@ -226,8 +230,7 @@
   "gallery": [
     "innerpages/assets/img/s_project/canvas_1.jpg",
     "innerpages/assets/img/s_project/canvas_2.jpg",
-    "innerpages/assets/img/s_project/canvas_3.jpg",
-    "innerpages/assets/img/s_project/canvas_4.jpg"
+    "innerpages/assets/img/s_project/canvas_3.jpg"
   ]
 }
 

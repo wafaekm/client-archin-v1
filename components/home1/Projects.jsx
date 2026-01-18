@@ -94,8 +94,8 @@ function Projects() {
   //   };
   // }, []);
   return (
-    <section className="tc-projects-style1">
-      <div className="container">
+<section id="projects" className="tc-projects-style1">
+<div className="container">
         <div className="title mb-70">
           <h2 className="fsz-45"> Featured Projects </h2>
         </div>
@@ -161,15 +161,22 @@ function Projects() {
               </ul>
             </div>
             <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end">
-              <a
-                href="#"
-                className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
-              >
-                <span>
-                  See All Projects
-                  <i className="small ms-1 ti-arrow-top-right"></i>
-                </span>
-              </a>
+            <a
+  href="#projects"
+  onClick={(e) => {
+    e.preventDefault();
+    const el = document.getElementById("projects");
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }}
+  className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
+>
+  <span>
+    See All Projects <i className="small ms-1 ti-arrow-top-right"></i>
+  </span>
+</a>
+
             </div>
           </div>
         </div>

@@ -15,6 +15,7 @@ import Testimonials from "@/components/home1-rtl/Testimonials";
 import Team from "@/components/home1-rtl/Team";
 import MilestonesAr from "@/components/home1-rtl/Milestones";
 import Footer from "@/components/home1-rtl/Footer";
+import Chat from "@/components/home1-rtl/Chat";
 
 export const metadata = {
   title: "روح المقاولة",
@@ -48,6 +49,7 @@ export default function HomeRtl() {
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
+        <div id="top" />
           <Navbar />
           <Header />
 
@@ -59,6 +61,7 @@ export default function HomeRtl() {
             <Testimonials lang="ar" />
             <MilestonesAr />
             <Team />
+            <Chat />
           </main>
 
           <Footer />

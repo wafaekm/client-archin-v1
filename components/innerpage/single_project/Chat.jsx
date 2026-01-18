@@ -14,7 +14,7 @@ function Chat({ lang = "en" }) {
   };
 
   return (
-    <section className="tc-chat-style1" dir={isAr ? "rtl" : "ltr"}>
+    <section id="chat" className="tc-chat-style1" dir={isAr ? "rtl" : "ltr"}>
       <div className="container">
         <div className="content">
           <a href={`mailto:${t.email}`} className="xl-text js-splittext-lines">

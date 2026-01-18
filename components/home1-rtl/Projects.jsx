@@ -31,8 +31,8 @@ function Projects({ lang = "ar" }) {
   const hrefFor = (slug) => `/${isAr ? "ar" : "en"}/projects/${slug}`;
 
   return (
-    <section className="tc-projects-style1" dir="rtl">
-      <div className="container">
+<section id="projects" className="tc-projects-style1" dir="rtl">
+  <div className="container">
         <div className="title mb-70">
           <h2 className="fsz-45">مشاريع مميزة</h2>
         </div>
@@ -80,7 +80,8 @@ function Projects({ lang = "ar" }) {
         </div>
 
         <div className="text-end mt-40">
-          <a href="#"
+        <a
+            href="#projects"
             className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
           >
             <span>

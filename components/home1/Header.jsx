@@ -77,13 +77,10 @@ function Header() {
                           {item.desc}
                         </div>
                         <a
-                          href="#footer"
-                          className="butn border rounded-pill mt-60 hover-orange"
+                          href="#chat"
+                          className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
                         >
-                          <span>
-                            Get A Free Quote Now
-                            <i className="small ms-1 ti-arrow-top-right"></i>
-                          </span>
+                          <span>Get a free quotation <i className="small ms-1 ti-arrow-top-right"></i></span>
                         </a>
 
 

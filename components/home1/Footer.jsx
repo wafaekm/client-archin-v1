@@ -18,7 +18,6 @@ function Footer() {
       className="tc-footer-style1 border-top en-footer-fix"
       dir="ltr"
     >
-      {/* IMPORTANT: on garde container-fluid, mais on "full-bleed" le top-content via footer-bleed */}
       <div className="container-fluid px-0">
         {/* TOP */}
         <div className="top-content section-padding">
@@ -34,6 +33,7 @@ function Footer() {
 
                   <div className="foot-social mt-50">
                     <a
+                      className="social-linkedin"
                       href="https://www.linkedin.com/company/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%AF%D9%8A%D9%85%D8%A7-%D8%B3%D8%AA%D8%A7%D8%B1-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9/"
                       target="_blank"
                       rel="noreferrer"
@@ -84,23 +84,14 @@ function Footer() {
                 <div className="branch-card">
                   <h5 className="mb-20 mt-5 fw-600">Services</h5>
                   <ul className="footer-links">
-                    <li>
-                      <a href="en/services">Design &amp; Build / Turnkey</a>
-                    </li>
-                    <li>
-                      <a href="en/services">MEP / HVAC / Fire Systems</a>
-                    </li>
-                    <li>
-                      <a href="en/services">
-                        Interior Fit-out &amp; Finishes
-                      </a>
-                    </li>
+                    <li><a href="en/services">Design &amp; Build / Turnkey</a></li>
+                    <li><a href="en/services">MEP / HVAC / Fire Systems</a></li>
+                    <li><a href="en/services">Interior Fit-out &amp; Finishes</a></li>
                   </ul>
 
-                  {/* Logo dans la même colonne, aligné à droite */}
                   <div className="footer-logo-wrap mt-30">
                     <img
-                      src="home_preview/assets/img/exp-logo.png"
+                      src="home_preview/assets/img/logo_dark.png"
                       alt="Company Logo"
                       className="footer-logo"
                     />
@@ -121,13 +112,15 @@ function Footer() {
                   © {new Date().getFullYear()} — All Rights Reserved
                 </p>
               </div>
+
               <div className="col-lg-6">
                 <div className="foot-links mt-4 mt-lg-0 justify-content-lg-end">
-                  <a href="/en">Home</a>
-                  <a href="/en/projects">Projects</a>
-                  <a href="/en/contact">Contact</a>
+                  <a href="#top">Home</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#chat">Contact</a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

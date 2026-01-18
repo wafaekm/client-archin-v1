@@ -115,10 +115,10 @@ function Services() {
             </div>
           </div>
           <div className="text-center">
-            <a
-              href="#"
-              className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
-            >
+          <a
+  href="#chat"
+  className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
+>
               <span>
                 Get A Free Quote Now
                 <i className="small ms-1 ti-arrow-top-right"></i>
