@@ -368,3 +368,9 @@ html {
 #footer{
   scroll-margin-top: 110px; /* ajuste si ta navbar est plus haute */
 }
+html { scroll-behavior: smooth; }
+
+/* Décale le scroll pour éviter que la navbar cache le titre/section */
+#chat, #projects, #footer {
+  scroll-margin-top: 110px;
+}

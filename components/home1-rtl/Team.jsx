@@ -11,6 +11,7 @@ function Team() {
         {/* MEMBERS (2 only) */}
         <div className="members">
           <div className="row justify-content-center">
+            {/* CARD 1 */}
             <div className="col-lg-4 col-md-6 mb-4">
               <a href="tel:+966564788222" className="team-card wow zoomIn">
                 <div className="img">
@@ -23,15 +24,22 @@ function Team() {
 
                 <h5 className="title">
                   م. <br /> عمر البكري
-                  </h5>
+                </h5>
 
-                <div className="mt-2 fsz-14 color-666">966 56 478 8222+</div>
+                <div
+                  className="mt-2 fsz-14 color-666"
+                  dir="ltr"
+                  style={{ unicodeBidi: "isolate", textAlign: "center" }}
+                >
+                  +966 56 478 8222
+                </div>
               </a>
             </div>
 
+            {/* CARD 2 */}
             <div className="col-lg-4 col-md-6 mb-4">
               <a
-                href="tel:+96654131977+"
+                href="tel:+966541319776"
                 className="team-card wow zoomIn"
                 data-wow-delay="0.1s"
               >
@@ -47,7 +55,13 @@ function Team() {
                   م. <br /> وئام أورّاد
                 </h5>
 
-                <div className="mt-2 fsz-14 color-666">966 54 131 9776+</div>
+                <div
+                  className="mt-2 fsz-14 color-666"
+                  dir="ltr"
+                  style={{ unicodeBidi: "isolate", textAlign: "center" }}
+                >
+                  +966 54 131 9776
+                </div>
               </a>
             </div>
           </div>

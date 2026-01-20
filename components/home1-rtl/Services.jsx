@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 
 function Services() {
@@ -134,15 +136,25 @@ function Services() {
           </div>
 
           <div className="text-center">
-            <a
-              href="#"
-              className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
-            >
-              <span>
-                احصل على عرض سعر مجاني الآن
-                <i className="small ms-1 ti-arrow-top-right"></i>
-              </span>
-            </a>
+          <a
+            href="#chat"
+            className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("chat");
+              if (!el) return;
+              const yOffset = 110;
+              const y = el.getBoundingClientRect().top + window.scrollY - yOffset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }}
+          >
+            <span>
+              احصل على عرض سعر مجاني الآن
+              <i className="small ms-1 ti-arrow-top-right"></i>
+            </span>
+          </a>
+
+
           </div>
         </div>
       </div>

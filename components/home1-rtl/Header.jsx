@@ -72,12 +72,25 @@ function Header() {
                           {item.desc}
                         </div>
 
-                        <a href="#footer" className="butn border rounded-pill mt-60 hover-orange">
-                          <span>
-                            احصل على عرض أسعار الآن
-                            <i className="small ms-1 ti-arrow-top-right"></i>
-                          </span>
-                        </a>
+                        <a
+                        href="#chat"
+                        className="butn border rounded-pill mt-60 hover-orange"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const el = document.getElementById("chat");
+                          if (!el) return;
+                          const yOffset = 110;
+                          const y = el.getBoundingClientRect().top + window.scrollY - yOffset;
+                          window.scrollTo({ top: y, behavior: "smooth" });
+                        }}
+                      >
+                        <span>
+                          احصل على عرض أسعار الآن
+                          <i className="small ms-1 ti-arrow-top-right"></i>
+                        </span>
+                      </a>
+
+
                       </div>
                     </div>
 

@@ -1,10 +1,33 @@
 import "./globals.css";
 import BASE_PATH from "@/common/basePath";
 
+export const metadata = {
+  title: "روح المقاولة",
+  icons: {
+    icon: `${BASE_PATH}/home_preview/assets/img/favicon.png`,
+    shortcut: `${BASE_PATH}/home_preview/assets/img/favicon.png`,
+  },
+  metadataBase: new URL("https://www.rohalmokawlah.com"),
+  title: {
+    default: "Roh Almokawlah",
+    template: "%s | Roh Almokawlah",
+  },
+  description: "Turnkey contracting services in Saudi Arabia.",
+  openGraph: {
+    siteName: "Roh Almokawlah",
+    title: "Roh Almokawlah",
+    description: "Turnkey contracting services in Saudi Arabia.",
+    url: "https://www.rohalmokawlah.com",
+    type: "website",
+  },
+};
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
+        
         {/* IMPORTANT: base pour corriger les chemins relatifs sur GitHub Pages */}
         <base href={`${BASE_PATH}/`} />
 
@@ -29,9 +52,29 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
         />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Roh Almokawlah",
+              url: "https://www.rohalmokawlah.com",
+              logo: "https://www.rohalmokawlah.com/home_preview/assets/img/logo.png",
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+966541319776",
+                  contactType: "customer service",
+                },
+              ],
+            }),
+          }}
+        />
       </head>
 
       <body>{children}</body>
+      
     </html>
   );
 }

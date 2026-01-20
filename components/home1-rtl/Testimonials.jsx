@@ -42,8 +42,8 @@ function Testimonials({ lang = "en" }) {
           text:
             "ننفّذ مشاريع تسليم مفتاح عبر تخطيط منضبط وتنسيق قوي وإشراف ميداني مباشر، لضمان جودة ثابتة وجدول زمني واضح.",
           name: "م. وئام أوراد",
-          role: "مهندسة مشروع",
-          img: "innerpages/assets/img/team/team1.png",
+          role: " مديرة المشاريع",
+          img: "home1/assets/img/team/team2.png",
         },
         {
           text:
@@ -58,8 +58,8 @@ function Testimonials({ lang = "en" }) {
           text:
             "We deliver turnkey projects with disciplined planning, strong coordination, and on-site control—ensuring consistent quality and predictable timelines.",
           name: "Engineer Ouiame",
-          role: "Project Engineer",
-          img: "innerpages/assets/img/team/team1.png",
+          role: "Project Manager",
+          img: "home1/assets/img/team/team1.png",
         },
         {
           text:

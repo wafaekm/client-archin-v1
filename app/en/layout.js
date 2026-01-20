@@ -1,16 +1,30 @@
+// app/layout.js
+import "./globals.css";
+import BASE_PATH from "@/common/basePath";
+
 export const metadata = {
-    title: "Rouh al Almokawlah",
-    icons: {
-      icon: "home_preview/assets/img/logo.png",
-      shortcut: "home_preview/assets/img/logo.png",
-    },
-  };
-  
-  export default function EnLayout({ children }) {
-    return (
-      <html lang="en" dir="ltr">
-        <body>{children}</body>
-      </html>
-    );
-  }
-  
+  metadataBase: new URL("https://www.rohalmokawlah.com"),
+  title: {
+    default: "Roh Almokawlah",
+    template: "%s | Roh Almokawlah",
+  },
+  description: "Turnkey contracting services in Saudi Arabia.",
+  openGraph: {
+    siteName: "Roh Almokawlah",
+    title: "Roh Almokawlah",
+    description: "Turnkey contracting services in Saudi Arabia.",
+    url: "https://www.rohalmokawlah.com",
+    type: "website",
+  },
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" dir="ltr" suppressHydrationWarning>
+      <head>
+        <base href={`${BASE_PATH}/`} />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
