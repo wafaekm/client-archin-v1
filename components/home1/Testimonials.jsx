@@ -58,7 +58,7 @@ function Testimonials({ lang = "en" }) {
             "We deliver turnkey projects with disciplined planning, strong coordination, and on-site control—ensuring consistent quality and predictable timelines.",
           name: "Engineer Ouiame",
           role: "Project Engineer",
-          img: "home1/assets/img/team/team1.png",
+          img: "home1/assets/img/team/team2.png",
         },
         {
           text:
