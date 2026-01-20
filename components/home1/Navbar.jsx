@@ -26,7 +26,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x">
       <div className="container-fluid content">
         <Link className="navbar-brand" href="/">
-          <img src={`${BASE_PATH}/home1/assets/img/logo.png`} alt="Logo" className="logo" />
+          <img src={`${BASE_PATH}/home1/assets/img/logo.png`} alt="rohalmokawlah" className="logo" />
         </Link>
 
         <button

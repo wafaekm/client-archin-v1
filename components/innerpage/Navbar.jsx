@@ -45,7 +45,7 @@ function Navbar({ lang = "en" }) {
       <div className="container-fluid content">
         {/* Logo => Home langue */}
         <Link className="navbar-brand" href={`/${lang}`}>
-          <img src={`${BASE_PATH}/home1/assets/img/logo.png`} alt="Logo" className="logo" />
+          <img src={`${BASE_PATH}/home1/assets/img/logo.png`} alt="rohalmokawlah" className="logo" />
         </Link>
 
         <button

@@ -46,7 +46,7 @@ function Navbar2() {
         <Link className="navbar-brand" href={homePath}>
           <img
             src="home1/assets/img/logo_black_gold.png"
-            alt="logo"
+            alt="rohalmokawlah"
             className="logo"
           />
         </Link>
