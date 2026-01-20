@@ -1,5 +1,4 @@
 // app/layout.js
-import "./globals.css";
 import BASE_PATH from "@/common/basePath";
 
 export const metadata = {
