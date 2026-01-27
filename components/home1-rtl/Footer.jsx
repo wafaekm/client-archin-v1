@@ -109,10 +109,25 @@ function Footer() {
               <div className="branch-card ar-block">
                 <h5 className="mb-20 mt-5 fw-600">الخدمات</h5>
                 <ul className="footer-links">
-                  <li><span>تصميم وتنفيذ / تسليم مفتاح</span></li>
-                  <li><span>MEP / HVAC / أنظمة مكافحة الحريق</span></li>
-                  <li><span>التجهيز الداخلي والتشطيبات</span></li>
+                  <li>
+                    <a href="mailto:info@rohalmokawlah.com">
+                      <span className="ltr-inline">info@rohalmokawlah.com</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+966564788222">
+                      <span className="ltr-inline">+966 56 478 8222</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+966541319776">
+                      <span className="ltr-inline">+966 54 131 9776</span>
+                    </a>
+                  </li>
                 </ul>
+
 
                 <div className="mt-30">
                   <img

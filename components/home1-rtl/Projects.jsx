@@ -80,23 +80,7 @@ function Projects({ lang = "ar" }) {
         </div>
 
         <div className="text-end mt-40">
-        <a
-          href="#projects"
-          className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
-          onClick={(e) => {
-            e.preventDefault();
-            const el = document.getElementById("projects");
-            if (!el) return;
-            const yOffset = 110;
-            const y = el.getBoundingClientRect().top + window.scrollY - yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }}
-        >
-          <span>
-            شاهد جميع المشاريع
-            <i className="small ms-1 ti-arrow-top-right"></i>
-          </span>
-        </a>
+       
 
         </div>
       </div>

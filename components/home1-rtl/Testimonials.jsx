@@ -134,9 +134,8 @@ function Testimonials({ lang = "en" }) {
         <Swiper {...marqSwiperOptions}>
           {marqWords.map((w, i) => (
             <SwiperSlide key={i}>
-              <a href="#" onClick={(e) => e.preventDefault()}>
-                {w}
-              </a>
+             <span className="marq-word">{w}</span>
+
             </SwiperSlide>
           ))}
         </Swiper>

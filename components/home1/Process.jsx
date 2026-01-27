@@ -97,15 +97,7 @@ function Process() {
                   </div>
                 </div>
 
-                <a
-                  href="#"
-                  className="butn border rounded-pill mt-80 color-orange1 border-orange1 hover-bg-orange1"
-                >
-                  <span>
-                    View Our Projects
-                    <i className="small ms-1 ti-arrow-top-right"></i>
-                  </span>
-                </a>
+              
               </div>
             </div>
 

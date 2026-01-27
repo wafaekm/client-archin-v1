@@ -42,22 +42,7 @@ function Experience() {
                 والتزام بالمواعيد.
               </div>
 
-              <a
-                href="#footer"
-                className="butn rounded-pill mt-50 hover-bg-black bg-white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById("footer");
-                  if (!el) return;
-                  const yOffset = 110;
-                  const y = el.getBoundingClientRect().top + window.scrollY - yOffset;
-                  window.scrollTo({ top: y, behavior: "smooth" });
-                }}
-              >
-                <span>
-                  عن الشركة <i className="small ms-1 ti-arrow-top-right"></i>
-                </span>
-              </a>
+             
 
 
             </div>

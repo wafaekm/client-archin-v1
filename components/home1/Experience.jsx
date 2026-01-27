@@ -40,14 +40,7 @@ function Experience() {
                 and on-time delivery.
               </div>
 
-              <a
-                href="#"
-                className="butn rounded-pill mt-50 hover-bg-black bg-white"
-              >
-                <span>
-                  Our Company <i className="small ms-1 ti-arrow-top-right"></i>
-                </span>
-              </a>
+           
             </div>
           </div>
 

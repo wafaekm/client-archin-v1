@@ -161,22 +161,7 @@ function Projects() {
               </ul>
             </div>
             <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end">
-            <a
-  href="#projects"
-  onClick={(e) => {
-    e.preventDefault();
-    const el = document.getElementById("projects");
-    if (!el) return;
-    const y = el.getBoundingClientRect().top + window.scrollY - 110;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  }}
-  className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
->
-  <span>
-    See All Projects <i className="small ms-1 ti-arrow-top-right"></i>
-  </span>
-</a>
-
+            
             </div>
           </div>
         </div>
@@ -198,13 +183,10 @@ function Projects() {
                     {data1.map((item, i) => (
                       <SwiperSlide key={i}>
                         <div className="project-card">
-                          <a
-                            href={item.img}
-                            className="img"
-                            data-fancybox="proj"
-                          >
-                            <img src={item.img} alt="" className="img-cover" />
-                          </a>
+                        <Link href={`/en/projects/${item.slug}`} className="img">
+                          <img src={item.img} alt={item.title_en || "Project"} className="img-cover" />
+                        </Link>
+
                           <div className="info">
                             <div className="tags">
                             <a href="#">Turnkey</a>

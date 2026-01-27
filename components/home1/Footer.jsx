@@ -71,14 +71,18 @@ function Footer() {
                   <h5 className="mb-20 mt-5 mt-lg-0 fw-600">Contact</h5>
                   <ul className="footer-links">
                     <li>
-                      <a href="mailto:info@rohalmokawlah.com">
-                        info@rohalmokawlah.com
-                      </a>
+                      <a href="mailto:info@rohalmokawlah.com">info@rohalmokawlah.com</a>
                     </li>
+
+                    <li>
+                      <a href="tel:+966564788222">+966 56 478 8222</a>
+                    </li>
+
                     <li>
                       <a href="tel:+966541319776">+966 54 131 9776</a>
                     </li>
                   </ul>
+
                 </div>
 
                 <div className="branch-card">
