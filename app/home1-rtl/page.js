@@ -19,6 +19,7 @@ import Chat from "@/components/home1-rtl/Chat";
 
 export const metadata = {
   title: "روح المقاولة",
+  description: "روح المقاولة — شركة [النشاط] في [المدينة]. خدمات [X]، [Y]، [Z]. تواصل معنا للحصول على عرض سعر.",
   icons: {
     icon: `${BASE_PATH}/home_preview/assets/img/favicon.png`,
     shortcut: `${BASE_PATH}/home_preview/assets/img/favicon.png`,
@@ -37,6 +38,10 @@ export const metadata = {
       "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap",
     ]),
   },
+  alternates: {
+    canonical: "https://rohalmokawlah.com/home1-rtl/",
+  },
+  
 };
 
 export default function HomeRtl() {
