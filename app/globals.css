@@ -438,3 +438,8 @@ html[dir="rtl"] .tc-projects-style1 .project-card .img::before{
   opacity:1;
   transform: translateY(0);
 }
+.tc-chat-style1[dir="rtl"] .butn span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

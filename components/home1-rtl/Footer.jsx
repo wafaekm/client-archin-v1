@@ -49,7 +49,11 @@ function Footer() {
   const hrefFor = (id) => `${pathname.split("#")[0]}#${id}`;
 
   return (
-    <footer id="footer" className="tc-footer-style1 border-top rtl-footer-fix" dir="ltr">
+    <footer
+      id="footer"
+      className="tc-footer-style1 border-top rtl-footer-fix"
+      dir="ltr"
+    >
       <div className="container">
         <div className="top-content section-padding">
           <div className="row gx-0 justify-content-between">
@@ -76,13 +80,21 @@ function Footer() {
 
                 <div className="mt-20">
                   <div className="footer-map">
-                    <iframe src={osmEmbedSrc} title="خريطة المقر الرئيسي" loading="lazy" />
+                    <iframe
+                      src={osmEmbedSrc}
+                      title="خريطة المقر الرئيسي"
+                      loading="lazy"
+                    />
                   </div>
 
                   <div className="mt-15">
-                    <small className="d-block fsz-12 color-666 mb-2">العنوان الرئيسي</small>
+                    <small className="d-block fsz-12 color-666 mb-2">
+                      العنوان الرئيسي
+                    </small>
                     <div className="fsz-16 fw-600 mb-1">المقر الرئيسي</div>
-                    <div className="fsz-16 color-666">الخبر / الدمام، السعودية</div>
+                    <div className="fsz-16 color-666">
+                      الخبر / الدمام، السعودية
+                    </div>
                   </div>
                 </div>
               </div>
@@ -90,44 +102,60 @@ function Footer() {
 
             {/* RIGHT */}
             <div className="col-lg-4">
+              {/* CONTACT */}
               <div className="branch-card ar-block">
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600">التواصل</h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="mailto:info@rohalmokawlah.com">
-                      <span className="ltr-inline">info@rohalmokawlah.com</span>
+                    <a
+                      href="mailto:info@rohalmokawlah.com"
+                      className="d-inline-flex align-items-center gap-2"
+                    >
+                      <i className="fas fa-envelope" aria-hidden="true" />
+                      <span className="ltr-inline">
+                        info@rohalmokawlah.com
+                      </span>
                     </a>
                   </li>
+
                   <li>
-                    <a href="tel:+966541319776">
+                    <a
+                      href="tel:+966564788222"
+                      className="d-inline-flex align-items-center gap-2"
+                    >
+                      <i className="fas fa-phone-alt" aria-hidden="true" />
+                      <span className="ltr-inline">+966 56 478 8222</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="tel:+966541319776"
+                      className="d-inline-flex align-items-center gap-2"
+                    >
+                      <i className="fas fa-phone-alt" aria-hidden="true" />
                       <span className="ltr-inline">+966 54 131 9776</span>
                     </a>
                   </li>
                 </ul>
               </div>
 
+              {/* SERVICES */}
               <div className="branch-card ar-block">
                 <h5 className="mb-20 mt-5 fw-600">الخدمات</h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="mailto:info@rohalmokawlah.com">
-                      <span className="ltr-inline">info@rohalmokawlah.com</span>
+                    <a href="ar/services">التصميم والتنفيذ / تسليم مفتاح</a>
+                  </li>
+                  <li>
+                    <a href="ar/services">
+                      الأعمال الكهروميكانيكية / التكييف / أنظمة مكافحة الحريق
                     </a>
                   </li>
-
                   <li>
-                    <a href="tel:+966564788222">
-                      <span className="ltr-inline">+966 56 478 8222</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="tel:+966541319776">
-                      <span className="ltr-inline">+966 54 131 9776</span>
-                    </a>
+                    <a href="ar/services">التشطيبات الداخلية / الإنهاءات</a>
                   </li>
                 </ul>
-
 
                 <div className="mt-30">
                   <img
@@ -152,14 +180,20 @@ function Footer() {
 
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0 justify-content-lg-end ar-block">
-                <a href={hrefFor("top")} onClick={onScroll("top")}>الرئيسية</a>
-                <a href={hrefFor("projects")} onClick={onScroll("projects")}>المشاريع</a>
-                <a href={hrefFor("chat")} onClick={onScroll("chat")}>تواصل معنا</a>
+                <a href={hrefFor("top")} onClick={onScroll("top")}>
+                  الرئيسية
+                </a>
+                <a href={hrefFor("projects")} onClick={onScroll("projects")}>
+                  المشاريع
+                </a>
+                <a href={hrefFor("chat")} onClick={onScroll("chat")}>
+                  تواصل معنا
+                </a>
               </div>
             </div>
           </div>
         </div>
-
+        {/* /Bottom bar */}
       </div>
     </footer>
   );

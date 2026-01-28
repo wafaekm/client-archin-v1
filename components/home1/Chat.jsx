@@ -2,9 +2,14 @@
 import React from "react";
 
 const CONTACTS = [
-  { display: "+966 56 478 8222", tel: "+966564788222", wa: "966564788222" },
-  { display: "+966 54 131 9776", tel: "+966541319776", wa: "966541319776" },
+  {
+    telDisplay: "+966 56 478 8222",
+    tel: "+966564788222",
+    waDisplay: "+966 54 131 9776",
+    wa: "966541319776",
+  },
 ];
+
 
 export default function Chat() {
   return (
@@ -37,8 +42,9 @@ export default function Chat() {
                   className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
                 >
                   <span>
-                    Call {c.display} <i className="fal fa-phone ms-2"></i>
+                    Call {c.telDisplay} <i className="fal fa-phone ms-2"></i>
                   </span>
+
                 </a>
 
                 <a
@@ -49,9 +55,10 @@ export default function Chat() {
                   style={{ borderColor: "#ccc", color: "#000" }}
                 >
                   <span>
-                    WhatsApp {c.display} <i className="fab fa-whatsapp ms-2"></i>
+                    WhatsApp {c.waDisplay} <i className="fab fa-whatsapp ms-2"></i>
                   </span>
                 </a>
+
               </React.Fragment>
             ))}
 

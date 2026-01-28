@@ -68,20 +68,30 @@ function Footer() {
               {/* RIGHT */}
               <div className="col-12 col-lg-5 footer-right">
                 <div className="branch-card">
-                  <h5 className="mb-20 mt-5 mt-lg-0 fw-600">Contact</h5>
+                <h5 className="mb-20 mt-5 mt-lg-0 fw-600">Contact</h5>
                   <ul className="footer-links">
                     <li>
-                      <a href="mailto:info@rohalmokawlah.com">info@rohalmokawlah.com</a>
+                      <a href="mailto:info@rohalmokawlah.com" className="d-inline-flex align-items-center gap-2">
+                        <i className="fas fa-envelope"></i>
+                        <span>info@rohalmokawlah.com</span>
+                      </a>
                     </li>
 
                     <li>
-                      <a href="tel:+966564788222">+966 56 478 8222</a>
+                      <a href="tel:+966564788222" className="d-inline-flex align-items-center gap-2">
+                        <i className="fas fa-phone-alt"></i>
+                        <span>+966 56 478 8222</span>
+                      </a>
                     </li>
 
                     <li>
-                      <a href="tel:+966541319776">+966 54 131 9776</a>
+                      <a href="tel:+966541319776" className="d-inline-flex align-items-center gap-2">
+                        <i className="fas fa-phone-alt"></i>
+                        <span>+966 54 131 9776</span>
+                      </a>
                     </li>
                   </ul>
+
 
                 </div>
 

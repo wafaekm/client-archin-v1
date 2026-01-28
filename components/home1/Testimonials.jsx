@@ -56,14 +56,14 @@ function Testimonials({ lang = "en" }) {
         {
           text:
             "We deliver turnkey projects with disciplined planning, strong coordination, and on-site control—ensuring consistent quality and predictable timelines.",
-          name: "Engineer Ouiame",
+          name: "Eng. Ouiame Aourrad",
           role: "Project Manager",
           img: "home1/assets/img/team/team2.png",
         },
         {
           text:
             "Safety and compliance are embedded in our workflow. We apply HSE standards, track progress clearly, and coordinate stakeholders to ensure smooth delivery.",
-          name: "Engineer Amr",
+          name: "Eng. Amr Bakry",
           role: "Site Engineer",
           img: "home1/assets/img/team/team1.png",
         },

@@ -52,9 +52,10 @@ export default function Home() {
 
             <main>
               <Experience />
+              <Projects />
               <Services />
               <Process />
-              <Projects />
+             
               <Testimonials />
               <Milestones />
               <Team />

@@ -60,9 +60,10 @@ export default function HomeRtl() {
 
           <main dir="rtl">
             <Experience />
+            <Projects lang="ar" />
             <Services />
             <Process />
-            <Projects lang="ar" />
+            
             <Testimonials lang="ar" />
             <MilestonesAr />
             <Team />
